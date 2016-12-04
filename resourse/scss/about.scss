@@ -28,7 +28,7 @@
 .wrapperAboutPage{
   width: 100%;
   height: 100%;
-  border: 1px solid red;
+  //border: 1px solid red;
   background: url(../image/backgroundHeaderAbout1800.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,10 +38,14 @@
 }
   .header__page{
     position: absolute;
-    border: 1px solid green;
+    //border: 1px solid green;
     display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
     justify-content: flex-start;
     width: 100%;
+    z-index: 3;
   }
     .header__links{
       display: flex;
@@ -98,3 +102,151 @@
         transition: 1.2s;
       }
     }
+    // НАСТРОЙКА ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.pageAbout__Desctop{
+  width: 100%;
+  height:100vh;
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+  .imagePortfolio{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(0,-50%);
+    width:100%;
+    height: 100%;
+
+    z-index: 1;
+    .svg_portfolio{
+      border: 1px solid yellow;
+      fill:rgba(#fff,0.1);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .blockPresent{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+    z-index: 2;
+  }
+    .blockPresent__photo{
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+      .img__photoAvtar{
+        width: 100%;
+        height: 100%;
+      }
+    .blockPresent__name{
+      font-size: 2.2rem;
+    line-height: 1.4;
+    }
+    .blockPresent__text{
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+    .triangleDouble{
+     position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 120px;
+      fill:#efeee9;
+      .svg_triangleDouble{
+        width: 100%;
+        height: 120px;
+      }
+    }
+
+// КОНЕЦ НАСТРОЙКИ ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+// НАСТРОЙКА ВТОРОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.pageAbout__Desctop2{
+flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #efeee9;
+}
+  .blockHalfWidth{
+    height: 100%;
+    width: 50%;
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    color:#455a64;
+    padding: 10px;
+  }
+    .image_text_svg{
+      position: absolute;
+      height: 130px;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      transform: translate(-50%,-50%);
+    }
+    .svg_about{
+      fill:rgba(#6d7070,0.1);
+      height: 100%;
+      width: 100%;
+    }
+    .blockHalfWidth__titleText{
+      font-size:3.9rem;
+      line-height: 1.2;
+      color:#373e42;
+    }
+    .blockHalfWidth__titleText2{
+      font-size:2.15rem;
+      width: 55%;
+      display: flex;
+      text-align: center;
+      justify-content:center;
+      align-items: center;
+      line-height: 1.2;
+      color:#373e42;
+      margin-bottom:30px;
+    }
+    .blockPhoto{
+      max-width: 75%;
+      display: flex;
+      justify-content: center;
+    }
+    .blockPhoto__image{
+      max-width: 100%;
+      height: auto;
+      margin-bottom:25px;
+    }
+    .blockHalfWidth__text{
+      width: 100%;
+      display: flex;
+      justify-content:flex-start;
+      align-items: flex-start;
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom:15px;
+      text-indent: 1rem;
+    }
+.column{  width: 100%;}
+.HalfWidth__circleTitle{
+  font-size:1.75rem ;
+  line-height: 1.1;
+}
+
+// КОНЕЦ НАСТРОЙКА ВТОРОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+//  НАСТРОЙКА ТРЕТЬЕГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+
+
+// КОНЕЦ НАСТРОЙКА ТРЕТЬЕГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ

@@ -4,6 +4,7 @@ module.exports = {
             srcIndex:'resourse/index.jade',
             distIndex: 'public',
             src: 'resourse/jade/*.jade',
+            srcWatch: ['resourse/jade/*.jade ','resourse/jade/add/*.jade '],
             dist: 'public/page'
         },
         scss: {

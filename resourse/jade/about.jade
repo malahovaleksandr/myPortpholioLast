@@ -20,20 +20,59 @@ html(lang="ru")
                 a.blueWall_link Блог
                 a.blueWall_link Обо мне
                 a.blueWall_link Авторизация
-        .wrapperAboutPage
-            header.header__page
-                .header__links
-                    a(href="https://www.facebook.com/sanek.maloff",target="_blank").wellcome__linkForSvg
-                        svg.wellcome__svg
-                            use(xlink:href="../image/sprite.svg#icon--Facebook",target="_blank")
-                    a(href="https://github.com/malahovaleksandr").wellcome__linkForSvg
-                        svg.wellcome__svg
-                            use(xlink:href="../image/sprite.svg#icon--github" )
-                    a(href="https://vk.com/id6734152", target="_blank").wellcome__linkForSvg
-                        svg.wellcome__svg
-                            use(xlink:href="../image/sprite.svg#icon--vk" )
-                .header__blockClose
-                    .blockClose_line
+        main.wrapperAboutPage
+
+            section.pageAbout__Desctop
+                include add/header
+                .imagePortfolio
+                    svg.svg_portfolio
+                        use(xlink:href="../image/sprite.svg#icon--portfolio_header").svg_portfolio
+
+
+                .blockPresent
+                    .blockPresent__photo
+                        img(src="../image/my_photo.jpg", alt="фото автора").img__photoAvtar
+                    .blockPresent__name.robotoMedium Александр Малахов
+                    .blockPresent__text.robotoLight Личный сайт веб-разработчика
+                .triangleDouble
+                    svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none", class="svg_triangleDouble")
+                        polygon( points="0,0   0,86   500.8,86   500.8,75.5")
+                        polygon( points="1000,0   1000,86   500,86   500,75.5")
+            section.pageAbout__Desctop.pageAbout__Desctop2
+                .blockHalfWidth.padding60
+                    .image_text_svg
+                        svg.svg_about
+                            use(xlink:href="../image/sprite.svg#icon--about_header").svg_about
+                    .blockHalfWidth__titleText.BERNIERRegular.doubleDash ОБО МНЕ
+                    .blockPhoto
+                        img(src="../image/my_photo.jpg", alt="фото автора").blockPhoto__image
+                    .blockHalfWidth__titleText2.BERNIERRegular.doubleDash КТО Я
+                    .blockHalfWidth__text.
+                        На этой земле бегаю уже 29 лет. Я с Украины родом.
+                         Чем я только не занимался?! Первый источник доходов
+                         это игра в футбол! Кто то платит чтоб смотреть футбол,
+                          я же получал деньги за то ,что играл! Потом продажа
+                          телефонов (когда еще были черно-белые даже).
+                          Потом занесло на пол года в США красить дома и
+                          есть фастфуд. Следующий шаг в работе - это промышленный
+                          альпинизм!!! Работал долго и интересно на высоте,
+                           где летают только птицы и большинство людей боиться
+                           смотреть вниз. Пришлось сменить эту работу и начал
+                            заниматься шитьем кожаных изделий: ремни, кошельки, сумки и т.д.
+                    .blockHalfWidth__text.
+                            А вот следующая и пока последняя сфера деятельности - это уже веб разработка!И тут я стараюсь развиваться как могу! Этот сайт - моя визитная карточка.
+
+
+                .blockHalfWidth.marginLeft30
+                    .blockHalfWidth__titleText2.BERNIERRegular.doubleDash ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+                    .blockHalfWidth__text.width60 Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    .column.robotoMedium.HalfWidth__circleTitle Frontend
+                    .column
+                    .column.robotoMedium.HalfWidth__circleTitle Backend
+                    .column
+                    .column.robotoMedium.HalfWidth__circleTitle Workflow
+            section.pageAbout__Desctop.pageAbout__Desctop3
+                include add/footer
 
 
 

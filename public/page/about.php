@@ -16,22 +16,95 @@
 			<div class="blueWall__rightSide"></div>
 			<div class="blueWall_menuLink"><a class="blueWall_link">Мои Работы</a><a class="blueWall_link">Блог</a><a class="blueWall_link">Обо мне</a><a class="blueWall_link">Авторизация</a></div>
 		</div>
-		<div class="wrapperAboutPage">
-			<header class="header__page">
-				<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
-						<svg class="wellcome__svg">
-							<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
-						</svg></a><a href="https://github.com/malahovaleksandr" class="wellcome__linkForSvg">
-						<svg class="wellcome__svg">
-							<use xlink:href="../image/sprite.svg#icon--github"></use>
-						</svg></a><a href="https://vk.com/id6734152" target="_blank" class="wellcome__linkForSvg">
-						<svg class="wellcome__svg">
-							<use xlink:href="../image/sprite.svg#icon--vk"></use>
-						</svg></a></div>
-				<div class="header__blockClose">
-					<div class="blockClose_line"></div>
+		<main class="wrapperAboutPage">
+			<section class="pageAbout__Desctop">
+				<header class="header__page">
+					<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
+							<svg class="wellcome__svg">
+								<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
+							</svg></a><a href="https://github.com/malahovaleksandr" class="wellcome__linkForSvg">
+							<svg class="wellcome__svg">
+								<use xlink:href="../image/sprite.svg#icon--github"></use>
+							</svg></a><a href="https://vk.com/id6734152" target="_blank" class="wellcome__linkForSvg">
+							<svg class="wellcome__svg">
+								<use xlink:href="../image/sprite.svg#icon--vk"></use>
+							</svg></a></div>
+					<div class="header__blockClose">
+						<div class="blockClose_line"></div>
+					</div>
+				</header>
+				<div class="imagePortfolio">
+					<svg class="svg_portfolio">
+						<use xlink:href="../image/sprite.svg#icon--portfolio_header" class="svg_portfolio"></use>
+					</svg>
 				</div>
-			</header>
-		</div>
+				<div class="blockPresent">
+					<div class="blockPresent__photo"><img src="../image/my_photo.jpg" alt="фото автора" class="img__photoAvtar"></div>
+					<div class="blockPresent__name robotoMedium">Александр Малахов</div>
+					<div class="blockPresent__text robotoLight">Личный сайт веб-разработчика</div>
+				</div>
+				<div class="triangleDouble">
+					<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1000 85" preserveaspectratio="none" class="svg_triangleDouble">
+						<polygon points="0,0   0,86   500.8,86   500.8,75.5"></polygon>
+						<polygon points="1000,0   1000,86   500,86   500,75.5"></polygon>
+					</svg>
+				</div>
+			</section>
+			<section class="pageAbout__Desctop pageAbout__Desctop2">
+				<div class="blockHalfWidth padding60">
+					<div class="image_text_svg">
+						<svg class="svg_about">
+							<use xlink:href="../image/sprite.svg#icon--about_header" class="svg_about"></use>
+						</svg>
+					</div>
+					<div class="blockHalfWidth__titleText BERNIERRegular doubleDash">ОБО МНЕ</div>
+					<div class="blockPhoto"><img src="../image/my_photo.jpg" alt="фото автора" class="blockPhoto__image"></div>
+					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash">КТО Я</div>
+					<div class="blockHalfWidth__text">
+						На этой земле бегаю уже 29 лет. Я с Украины родом.
+						 Чем я только не занимался?! Первый источник доходов
+						 это игра в футбол! Кто то платит чтоб смотреть футбол,
+						  я же получал деньги за то ,что играл! Потом продажа
+						  телефонов (когда еще были черно-белые даже).
+						  Потом занесло на пол года в США красить дома и
+						  есть фастфуд. Следующий шаг в работе - это промышленный
+						  альпинизм!!! Работал долго и интересно на высоте,
+						   где летают только птицы и большинство людей боиться
+						   смотреть вниз. Пришлось сменить эту работу и начал
+						    заниматься шитьем кожаных изделий: ремни, кошельки, сумки и т.д.
+					</div>
+					<div class="blockHalfWidth__text">
+						А вот следующая и пока последняя сфера деятельности - это уже веб разработка!И тут я стараюсь развиваться как могу! Этот сайт - моя визитная карточка.
+						
+						
+					</div>
+				</div>
+				<div class="blockHalfWidth marginLeft30">
+					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash">ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН</div>
+					<div class="blockHalfWidth__text width60">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
+					<div class="column robotoMedium HalfWidth__circleTitle">Frontend</div>
+					<div class="column"></div>
+					<div class="column robotoMedium HalfWidth__circleTitle">Backend</div>
+					<div class="column"></div>
+					<div class="column robotoMedium HalfWidth__circleTitle">Workflow</div>
+				</div>
+			</section>
+			<section class="pageAbout__Desctop pageAbout__Desctop3">
+				<footer class="footer">
+					<div class="footer_column"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация
+							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
+									<svg class="footer__svg">
+										<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
+									</svg></a><a href="https://github.com/malahovaleksandr" class="wellcome__linkForSvg">
+									<svg class="footer__svg">
+										<use xlink:href="../image/sprite.svg#icon--github"></use>
+									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="wellcome__linkForSvg">
+									<svg class="footer__svg">
+										<use xlink:href="../image/sprite.svg#icon--vk"></use>
+									</svg></a></div></a></div>
+					<div class="footer_column"></div>
+				</footer>
+			</section>
+		</main>
 	</body>
 </html>
