@@ -19,12 +19,16 @@ module.exports = {
             dist: 'public/js/'
         },
         image: {
-            src: 'resourse/img/*.(png | jpg | jpeg)',
+            src: 'resourse/img/*.*',
             dist: 'public/image/'
         },
         svg: {
             src: 'resourse/img/*/*.svg',
             dist: 'public/'
+        },
+        font:{
+            src: 'resourse/fonts/*/*.* | resourse/fonts/*.*',
+            dist: 'public/fonts/'
         },
         watch: {
             src: 'resourse/scss/*.scss'

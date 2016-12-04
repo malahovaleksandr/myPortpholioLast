@@ -1,0 +1,40 @@
+doctype HTML
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta( name="description", content="Портфолио веб-разработчика Малахова Александра")
+        meta( name="keywords", content="Сайт, написать сайт, заказать сайт")
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+        title Портфолио- Обо мне
+        link(rel="stylesheet" href="../css/main.css")
+    body
+        .wrapperBlueWall
+            .blueWall__leftSide
+            .blueWall__rightSide
+
+
+            .blueWall_menuLink
+                a.blueWall_link Мои Работы
+                a.blueWall_link Блог
+                a.blueWall_link Обо мне
+                a.blueWall_link Авторизация
+        .wrapperAboutPage
+            header.header__page
+                .header__links
+                    a(href="https://www.facebook.com/sanek.maloff",target="_blank").wellcome__linkForSvg
+                        svg.wellcome__svg
+                            use(xlink:href="../image/sprite.svg#icon--Facebook",target="_blank")
+                    a(href="https://github.com/malahovaleksandr").wellcome__linkForSvg
+                        svg.wellcome__svg
+                            use(xlink:href="../image/sprite.svg#icon--github" )
+                    a(href="https://vk.com/id6734152", target="_blank").wellcome__linkForSvg
+                        svg.wellcome__svg
+                            use(xlink:href="../image/sprite.svg#icon--vk" )
+                .header__blockClose
+                    .blockClose_line
+
+
+
+

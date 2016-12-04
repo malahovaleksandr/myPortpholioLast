@@ -8,6 +8,7 @@
     "gulp-browserify": "^0.5.1",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^3.1.1",
     "gulp-jade": "^1.1.0",
     "gulp-jade-for-php": "^1.0.9",
     "gulp-jade-php": "^2.0.0-0",

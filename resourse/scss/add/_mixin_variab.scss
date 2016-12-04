@@ -1,16 +1,60 @@
-$rep:green;
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-  -moz-border-radius: $radius;
-  border-radius: $radius;
-  -ms-border-radius: $radius;
-};
-@mixin transition($property, $duration, $timing){
-  -webkit-transition: $property $duration $timing;
-  -moz-transition: $property $duration $timing;
-  -o-transition: $property $duration $timing;
-  transition: $property $duration $timing;
-}
+
 @mixin adaptive($minWidth,$maxWidth){
   @media screen and (min-width: $minWidth) and (max-width:$maxWidth){}
 };
+$width1900:1900px;
+$width1800:1800px;
+$width1600:1600px;
+$width1366:1366px;
+$width1240: 1240px;
+$width1024: 1024px;
+$width768: 768px;
+$width480: 480px;
+
+@mixin breakpoint($media) {
+  @if $media == point1900 {
+    @media only screen and (min-width: $width1900) { @content; }
+  }
+  @if $media == point1800 {
+    @media only screen and (max-width: $width1800) { @content; }
+  }
+  @if $media == point1600 {
+    @media only screen and (max-width: $width1600) { @content; }
+  }
+  @if $media == point1366 {
+    @media only screen and (max-width: $width1366) { @content; }
+  }
+  @if $media == point1240 {
+    @media only screen and (max-width: $width1240) { @content; }
+  }
+
+  @else if $media == point1024 {
+    @media only screen and (max-width: $width1024) { @content; }
+  }
+  @else if $media == point768 {
+    @media only screen and (min-width: 769px) and (max-width: 1023px) { @content; }
+  }
+  @if $media == desctop {
+    @media only screen and (min-width: $width1024 + 1) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (max-width: 1023px ) { @content; }
+  }
+  @else if $media == phone {
+    @media only screen  and (max-width:  600px) { @content; }
+  }
+
+}
+//exemple
+@include breakpoint(desctop)  {
+  width:39px;
+  height: 39px;
+}
+@include breakpoint(tablet)  {
+  width:28px;
+  height: 28px;
+}
+@include breakpoint(phone)  {
+  width:22px;
+  height: 22px;
+}
