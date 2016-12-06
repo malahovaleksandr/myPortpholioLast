@@ -9,6 +9,7 @@ html(lang="ru")
         //link(rel="icon" href="../favicon.ico" type="image/x-icon")
         title Портфолио- Обо мне
         link(rel="stylesheet" href="../css/main.css")
+
     body
         .wrapperBlueWall
             .blueWall__leftSide
@@ -39,7 +40,7 @@ html(lang="ru")
                         polygon( points="0,0   0,86   500.8,86   500.8,75.5")
                         polygon( points="1000,0   1000,86   500,86   500,75.5")
             section.pageAbout__Desctop.pageAbout__Desctop2
-                .blockHalfWidth.padding60
+                .blockHalfWidth
                     .image_text_svg
                         svg.svg_about
                             use(xlink:href="../image/sprite.svg#icon--about_header").svg_about
@@ -72,6 +73,33 @@ html(lang="ru")
                     .column
                     .column.robotoMedium.HalfWidth__circleTitle Workflow
             section.pageAbout__Desctop.pageAbout__Desctop3
+                #js_connectMap.block__map
+                .block_withInfo
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.alignCenter  КОНТАКТЫ
+                        .columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--skype").svg_block_withInfo
+                            .rowText.robotoMedium  pro100_boy
+                        a(href="mailto:pro100boy@gmail.com",target="_blank").columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--envelope2").svg_block_withInfo
+                            .rowText.robotoMedium  pro100boy@gmail.com
+
+                        a(href="tel:+380631275355").columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--phone2").svg_block_withInfo
+                            .rowText.robotoMedium  +38(063) 12 75 355
+                        .columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--map_marker").svg_block_withInfo
+                            .rowText.robotoMedium  Украина, г.Киев
+
+
+
                 include add/footer
 
 

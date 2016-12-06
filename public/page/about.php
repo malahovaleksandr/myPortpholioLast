@@ -51,7 +51,7 @@
 				</div>
 			</section>
 			<section class="pageAbout__Desctop pageAbout__Desctop2">
-				<div class="blockHalfWidth padding60">
+				<div class="blockHalfWidth">
 					<div class="image_text_svg">
 						<svg class="svg_about">
 							<use xlink:href="../image/sprite.svg#icon--about_header" class="svg_about"></use>
@@ -90,20 +90,58 @@
 				</div>
 			</section>
 			<section class="pageAbout__Desctop pageAbout__Desctop3">
+				<div id="js_connectMap" class="block__map"></div>
+				<div class="block_withInfo">
+					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash alignCenter"> КОНТАКТЫ</div>
+					<div class="columnFlex">
+						<div class="rowSvg">
+							<svg class="svg_block_withInfo svg_iconSocial">
+								<use xlink:href="../image/sprite.svg#icon--skype" class="svg_block_withInfo"></use>
+							</svg>
+						</div>
+						<div class="rowText robotoMedium"> pro100_boy</div>
+					</div><a href="mailto:pro100boy@gmail.com" target="_blank" class="columnFlex">
+						<div class="rowSvg">
+							<svg class="svg_block_withInfo svg_iconSocial">
+								<use xlink:href="../image/sprite.svg#icon--envelope2" class="svg_block_withInfo"></use>
+							</svg>
+						</div>
+						<div class="rowText robotoMedium"> pro100boy@gmail.com</div></a><a href="tel:+380631275355" class="columnFlex">
+						<div class="rowSvg">
+							<svg class="svg_block_withInfo svg_iconSocial">
+								<use xlink:href="../image/sprite.svg#icon--phone2" class="svg_block_withInfo"></use>
+							</svg>
+						</div>
+						<div class="rowText robotoMedium"> +38(063) 12 75 355</div></a>
+					<div class="columnFlex">
+						<div class="rowSvg">
+							<svg class="svg_block_withInfo svg_iconSocial">
+								<use xlink:href="../image/sprite.svg#icon--map_marker" class="svg_block_withInfo"></use>
+							</svg>
+						</div>
+						<div class="rowText robotoMedium"> Украина, г.Киев</div>
+					</div>
+				</div>
 				<footer class="footer">
 					<div class="footer_column"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация
-							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
+							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
 									<svg class="footer__svg">
 										<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
-									</svg></a><a href="https://github.com/malahovaleksandr" class="wellcome__linkForSvg">
+									</svg></a><a href="https://github.com/malahovaleksandr" class="block__linkForSvg">
 									<svg class="footer__svg">
 										<use xlink:href="../image/sprite.svg#icon--github"></use>
-									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="wellcome__linkForSvg">
+									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
 									<svg class="footer__svg">
 										<use xlink:href="../image/sprite.svg#icon--vk"></use>
 									</svg></a></div></a></div>
-					<div class="footer_column"></div>
+					<div class="footer_column">
+						<div class="footer__text">© Александр Малахов | 2016</div>
+					</div>
 				</footer>
+				<!--script(src="https://code.jquery.com/jquery-2.2.4.js",integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=",crossorigin="anonymous")-->
+				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKSYmYkeTAluiJKxtn4LXvOZD9xIeVM4M"></script>
+				<script src="../js/jquery.js" type="text/javascript"></script>
+				<script src="../js/main.js" type="text/javascript"></script>
 			</section>
 		</main>
 	</body>

@@ -1,0 +1,131 @@
+doctype HTML
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta( name="description", content="Портфолио веб-разработчика Малахова Александра")
+        meta( name="keywords", content="Сайт, написать сайт, заказать сайт")
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+        title Портфолио- Мои работы
+        link(rel="stylesheet" href="../css/main.css")
+
+    body
+        .wrapperBlueWall
+            .blueWall__leftSide
+            .blueWall__rightSide
+
+
+            .blueWall_menuLink
+                a.blueWall_link Мои Работы
+                a.blueWall_link Блог
+                a.blueWall_link Обо мне
+                a.blueWall_link Авторизация
+        main.wrapperAboutPage
+
+            section.pageAbout__Desctop
+                include add/header
+                .imagePortfolio
+                    svg.svg_portfolio
+                        use(xlink:href="../image/sprite.svg#icon--portfolio_header").svg_portfolio
+
+
+                .blockPresent
+                    .blockPresent__photo
+                        img(src="../image/my_photo.jpg", alt="фото автора").img__photoAvtar
+                    .blockPresent__name.robotoMedium Александр Малахов
+                    .blockPresent__text.robotoLight Личный сайт веб-разработчика
+                .triangleDouble.fillLightGrey
+                    svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none", class="svg_triangleDouble")
+                        polygon( points="0,0   0,86   500.8,86   500.8,75.5")
+                        polygon( points="1000,0   1000,86   500,86   500,75.5")
+            .wrap__titleName.flexCenterContext
+                .blockHalfWidth__titleText.BERNIERRegular.doubleDash МОИ РАБОТЫ
+                svg.svg_work.absoluteCenter
+                    use(xlink:href="../image/sprite.svg#icon--works_header").svg_work
+            section.pageAbout__Desctop.gray_desctop.flexRow
+                .blockHalfWidth.flexCenterContext
+                    .wrapBlock_60procent.flexCenterContext.flexColumn
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100 САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
+                        .line_workflow.robotoMedium HTML, CSS, PHP, GULP
+                        a(href="").buttobLookSite.flexCenterContext
+                            svg.svg_link
+                                use(xlink:href="../image/sprite.svg#icon--link").svg_link
+                            .buttobLookSite__text.robotoMedium Посмотреть сайт
+                    .wrapSlideshow.flexCenterContext
+                        ul.ul_slider
+                            li.li__slider.flexCenterContext.li__slider_activ
+                                img(src="../image/sliderSite/slider1.jpg",alt="фото сайта").li__slider__image
+                            li.li__slider.flexCenterContext
+                                img(src="../image/sliderSite/slider2.jpg",alt="фото сайта").li__slider__image
+                            li.li__slider.flexCenterContext
+                                img(src="../image/sliderSite/slider3.jpg",alt="фото сайта").li__slider__image
+                            li.li__slider.flexCenterContext
+                                img(src="../image/sliderSite/slider4.jpg",alt="фото сайта").li__slider__image
+                .blockHalfWidth.flexJustEnd.padding0
+                    .arrowForSlider
+                        .arrowForSlider_side.arrow__slideNext.flexCenterContext.js_arrow__slideNext
+
+                            svg.svg_arrow_slider
+                                use(xlink:href="../image/sprite.svg#icon--portf_arrow_down").svg_arrow_slider
+                        .arrowForSlider_side.arrow__slidePrew.flexCenterContext.js_arrow__slidePrew
+
+                            svg.svg_arrow_slider
+                                use(xlink:href="../image/sprite.svg#icon--portf_arrow_up").svg_arrow_slider
+
+
+            .wrap__titleName.flexCenterContext.background_white
+                .blockHalfWidth__titleText.BERNIERRegular.doubleDash ЧТО ОБО МНЕ ГОВОРЯТ
+                svg.svg_work.absoluteCenter
+                    use(xlink:href="../image/sprite.svg#icon--about_header").svg_work
+            section.pageMyWork_lastDesktop
+
+                .flexCenterContext
+                    .blockFeedback
+                        img(src="../image/kov.png", alt="ковычки").image__kovichki
+                        .textFeedback.robotoRegular.
+                            Этот парень проходил обучение веб-разработке не где-то,
+                            а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        .avtor__feedback
+                            .avtor_imageWrapper
+                                img(src="../image/dmit.jpg", alt="фото Ковальчука Д.").photo_avtor_feedback
+                            .flexColumn
+                                .avtor__feedback__text.robotoBold Ковальчук Дмитрий
+                                .avtor__feedback__text.robotoRegular Основатель LoftSchool
+                    .blockFeedback
+                        img(src="../image/kov.png", alt="ковычки").image__kovichki
+                        .textFeedback.robotoRegular.
+                            Этот код выдержет любые испытания. Только пожалуйста,
+                            не загружается сайт на слишком старых браузерах!
+                        .avtor__feedback
+                            .avtor_imageWrapper
+                                img(src="../image/zar.jpg", alt="фото Захаров З.").photo_avtor_feedback
+                            .flexColumn
+                                .avtor__feedback__text.robotoBold Зар Захаров
+                                .avtor__feedback__text.robotoRegular Преподаватель
+                .wrapper__blockSandMail.absoluteCenter.flexCenterContext.flexColumn
+                    .blockSandMail__lineTitle.BERNIERRegular.doubleDash СВЯЗАТЬСЯ СО МНОЙ
+                    form(method="POST", action="").form__sandMail.flexColumn.flexStart.robotoRegular
+                        input(type="text", name="nameMailer",placeholder="Имя").inputForm.js_inputName
+                        input(type="text", name="emailMailer",placeholder="Email").inputForm.js_inputEmail
+                        textarea(rows="10", name="textMailer",placeholder="Ваше сообщение").inputForm.js_inputText.inputTextarea
+                        .wrap_form__buttons
+                            .form__button.robotoMedium Отправить
+                            .form__button.robotoMedium Очистить
+                .wrapper__blockSandMail.absoluteCenter.wrapper__blur
+                    .block_blur
+
+
+
+
+
+
+
+
+
+
+                include add/footer
+
+
+
+

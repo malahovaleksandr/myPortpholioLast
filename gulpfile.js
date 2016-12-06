@@ -110,11 +110,6 @@ gulp.task('image', function(){
         .pipe(gulp.dest($.config.paths.image.dist));
 });
 
-
-
-
-
-
 ///подключаем WATCH
 gulp.task('watch', function () {
 
