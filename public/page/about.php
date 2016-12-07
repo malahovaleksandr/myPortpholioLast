@@ -21,8 +21,8 @@
 				<header class="header__page">
 					<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
 							<svg class="wellcome__svg">
-								<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
-							</svg></a><a href="https://github.com/malahovaleksandr" class="wellcome__linkForSvg">
+								<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
+							</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="wellcome__linkForSvg">
 							<svg class="wellcome__svg">
 								<use xlink:href="../image/sprite.svg#icon--github"></use>
 							</svg></a><a href="https://vk.com/id6734152" target="_blank" class="wellcome__linkForSvg">
@@ -126,8 +126,8 @@
 					<div class="footer_column"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация
 							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
 									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--Facebook" target="_blank"></use>
-									</svg></a><a href="https://github.com/malahovaleksandr" class="block__linkForSvg">
+										<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
+									</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="block__linkForSvg">
 									<svg class="footer__svg">
 										<use xlink:href="../image/sprite.svg#icon--github"></use>
 									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
