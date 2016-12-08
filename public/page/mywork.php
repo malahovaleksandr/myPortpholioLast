@@ -157,9 +157,9 @@
 					</div>
 				</footer>
 				<!--script(src="https://code.jquery.com/jquery-2.2.4.js",integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=",crossorigin="anonymous")-->
-				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKSYmYkeTAluiJKxtn4LXvOZD9xIeVM4M"></script>
 				<script src="../js/jquery.js" type="text/javascript"></script>
 				<script src="../js/main.js" type="text/javascript"></script>
+				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKSYmYkeTAluiJKxtn4LXvOZD9xIeVM4M"></script>
 			</section>
 		</main>
 	</body>

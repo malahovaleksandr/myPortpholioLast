@@ -1,3 +1,3 @@
 $(function(){
-   console.log('proverks'); 
+  // console.log('proverks');    
 });
