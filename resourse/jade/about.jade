@@ -15,15 +15,26 @@ html(lang="ru")
             .blueWall__leftSide
             .blueWall__rightSide
 
-
             .blueWall_menuLink
-                a.blueWall_link Мои Работы
-                a.blueWall_link Блог
-                a.blueWall_link Обо мне
-                a.blueWall_link Авторизация
+                a(href="mywork.php").blueWall_link.BERNIERRegular Мои Работы
+                a(href="blog.php").blueWall_link.BERNIERRegular Блог
+                a(href="about.php").blueWall_link.BERNIERRegular.doubleDash Обо мне
+                a(href="authorithation.php").blueWall_link.BERNIERRegular Авторизация
         main.wrapperAboutPage
 
             section.pageAbout__Desctop
+                .verticalParrallaxWpap
+                    .vertParralax_layer.parralax_layer1
+                    .vertParralax_layer.parralax_layer2
+                    .vertParralax_layer.parralax_layer3
+                    .vertParralax_layer.parralax_layer4
+                    .vertParralax_layer.parralax_layer5
+                    .vertParralax_layer.parralax_layer6
+                    .vertParralax_layer.parralax_layer7
+                    .vertParralax_layer.parralax_layer8
+                    .vertParralax_layer.parralax_layer9
+                    .vertParralax_layer.parralax_layer10
+
                 include add/header
                 .imagePortfolio
                     svg.svg_portfolio
@@ -101,6 +112,78 @@ html(lang="ru")
 
 
                 include add/footer
+       // script(async defer).
+            google.maps.event.addDomListener(window, 'load', init);
+            var map;
+            function init() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(50.5024, 30.492495),
+                    zoom: 12,
+                    zoomControl: true,
+                    zoomControlOptions: {
+                        style: google.maps.ZoomControlStyle.DEFAULT,
+                    },
+                    disableDoubleClickZoom: true,
+                    mapTypeControl: true,
+                    mapTypeControlOptions: {
+                        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                    },
+                    scaleControl: true,
+                    scrollwheel: true,
+                    panControl: true,
+                    streetViewControl: true,
+                    draggable: true,
+                    overviewMapControl: true,
+                    overviewMapControlOptions: {
+                        opened: false,
+                    },
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                }
+                var mapElement = document.getElementById('js_connectMap');
+                var map = new google.maps.Map(mapElement, mapOptions);
+                var locations = [
+                    ['Я', 'undefined', 'undefined', 'undefined', 'undefined', 50.507087, 30.497258, 'https://mapbuildr.com/assets/img/markers/hollow-pin-blue.png']
+                ];
+                for (i = 0; i < locations.length; i++) {
+                    if (locations[i][1] == 'undefined') {
+                        description = '';
+                    } else {
+                        description = locations[i][1];
+                    }
+                    if (locations[i][2] == 'undefined') {
+                        telephone = '';
+                    } else {
+                        telephone = locations[i][2];
+                    }
+                    if (locations[i][3] == 'undefined') {
+                        email = '';
+                    } else {
+                        email = locations[i][3];
+                    }
+                    if (locations[i][4] == 'undefined') {
+                        web = '';
+                    } else {
+                        web = locations[i][4];
+                    }
+                    if (locations[i][7] == 'undefined') {
+                        markericon = '';
+                    } else {
+                        markericon = locations[i][7];
+                    }
+                    marker = new google.maps.Marker({
+                        icon: markericon,
+                        position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                        map: map,
+                        title: locations[i][0],
+                        desc: description,
+                        tel: telephone,
+                        email: email,
+                        web: web
+                    });
+                    link = '';
+                }
+
+            }
 
 
 

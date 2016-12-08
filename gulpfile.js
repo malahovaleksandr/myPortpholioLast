@@ -114,7 +114,7 @@ gulp.task('image', function(){
 gulp.task('watch', function () {
 
     gulp.watch($.config.paths.jade.srcWatch, ['jadePhp','jadeIndexPhp']).on('change', browserSync.reload);
-    //gulp.watch($.config.paths.jade.srcIndex, ['jadeIndexPhp']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.jade.srcIndex, ['jadeIndexPhp']).on('change', browserSync.reload);
     gulp.watch($.config.paths.watch.src, ['scss']).on('change', browserSync.reload);
     gulp.watch($.config.paths.svg.src, ['svg_sprite']).on('change', browserSync.reload);
     gulp.watch($.config.paths.js.src, ['scripts']).on('change', browserSync.reload);

@@ -5,8 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="Портфолио веб-разработчика Малахова Александра">
 		<meta name="keywords" content="Сайт, написать сайт, заказать сайт">
-		<!--link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")-->
-		<!--link(rel="icon" href="../favicon.ico" type="image/x-icon")-->
 		<title>Портфолио</title>
 		<link rel="stylesheet" href="css/main.css">
 	</head>
@@ -43,7 +41,7 @@
 								<svg class="wellcome__svg">
 									<use xlink:href="image/sprite.svg#icon--vk"></use>
 								</svg></a></div>
-						<div class="wrapper__wellcome_linkToPage"><a href="page/work.php" class="wellcome_linkToPage">Мои работы</a><a href="page/about.php" class="wellcome_linkToPage">Обо мне</a><a href="page/blog.php" class="wellcome_linkToPage">Блог</a></div>
+						<div class="wrapper__wellcome_linkToPage"><a href="page/mywork.php" class="wellcome_linkToPage">Мои работы</a><a href="page/about.php" class="wellcome_linkToPage">Обо мне</a><a href="page/blog.php" class="wellcome_linkToPage">Блог</a></div>
 					</div>
 					<div class="blockWellcome_back display_none">
 						<div class="wellcome_back__title">Авторизуйтесь</div>

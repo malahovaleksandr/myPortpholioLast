@@ -1,11 +1,19 @@
 //настройки для появляещегося меню с сылками на другие страницы
 .wrapperBlueWall{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   min-height: 650px;
-  opacity:0.85;
+  opacity:1;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  transition: 1s;
+  //visibility: hidden;
+}
+.wrapperBlueWall_active{
   position: fixed;
-  visibility: hidden;
+  opacity: 1;
+  z-index: 4;
 }
 .blueWall__leftSide{
   position: absolute;
@@ -14,29 +22,60 @@
   width:50%;
   height: 100vh;
   min-height: 650px;
-  background: #00bfa5;
-}.blueWall__rightSide{
+  background: rgba(#00bfa5,0.8);
+  z-index: -1;
+  transition: 1s;
+}
+
+.blueWall__rightSide{
    position: absolute;
    right: -100%;
    top: 0;
    width:50%;
    height: 100vh;
   min-height: 650px;
-   background: #00bfa5;
+   background:rgba(#00bfa5,0.8);
+  z-index: -1;
+  transition: 1s;
  }
-
+.blueWall_menuLink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:100%;
+  padding-top: 70px;
+  z-index: 4;
+  top: -100%;
+  position: absolute;
+  transition: 1s;
+}
+.blueWall_menuLink_active{
+  position: relative;
+  top: 0;
+}
+.blueWall_link{
+  font-size: 3.9rem;
+  color:#fff;
+  margin-bottom:70px;
+  cursor: pointer;
+  opacity: 0.8;
+  &:hover{
+    opacity: 1;
+  }
+}
+.header__blockClose_fixed{
+  position: fixed;
+  right: 0;
+}
 
 /// НАСТРОЙКИ КОНТЕНТА СТРАНИЦЫ ОБО МНЕ
 .wrapperAboutPage{
   width: 100%;
   height: 100%;
   //border: 1px solid red;
-  background: url(../image/backgroundHeaderAbout1800.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
-
 }
   .header__page{
     position: absolute;
@@ -47,7 +86,7 @@
     right: 0;
     justify-content: flex-start;
     width: 100%;
-    z-index: 3;
+    z-index: 5;
   }
     .header__links{
       display: flex;
@@ -61,7 +100,6 @@
       }
     }
     .header__blockClose{
-
       margin:15px;
       margin-left:auto;
       width: 35px;
@@ -72,6 +110,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      z-index: 7;
 
       &:hover .blockClose_line,&:hover .blockClose_line:after,&:hover .blockClose_line:before{
         background: rgba(#fff,1);
@@ -104,7 +143,96 @@
         transition: 1.2s;
       }
     }
-    // НАСТРОЙКА ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.blockClose_line_active.blockClose_line{
+ height: 0;
+}
+.blockClose_line_active{
+  &:before{
+    transform:translateY(-50%) rotate(-45deg);
+    top:50%;
+    background: rgba(#fff,1);
+    opacity: 1;
+  }
+  &:after{
+    transform:translateY(-50%) rotate(45deg);
+    top:50%;
+    opacity:1;
+    background: rgba(#fff,1);
+  }
+}
+
+
+//настройки для паралакса вертикального------------------------------
+.verticalParrallaxWpap{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vertParralax_layer{
+  position: absolute;
+  width: 100%;
+  height: 114%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.parralax_layer10{
+  background:url(../image/1cloud_PNG5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer9{
+  background:url(../image/2Layer1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer8{
+  background:url(../image/3Layer2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer7{
+  background:url(../image/4sky3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer6{
+  background:url(../image/5Layer4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer5{
+  background:url(../image/6Layer6.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer4{
+  background:url(../image/7cloud_PNG4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer3{
+  background:url(../image/8Layer7.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer2{
+  background:url(../image/9Layer8.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.parralax_layer1{
+  background:url(../image/10Layer5-9.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+//конец настройки для паралакса вертикального------------------------------
+// НАСТРОЙКА ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
 .pageAbout__Desctop{
   width: 100%;
   height:100vh;
@@ -264,6 +392,7 @@
   border:1px solid blue;
   z-index: 0;
   background: rgba(blue,0.3);
+ // margin-bottom: 110px;
 }
 .block_withInfo{
   z-index: 3;
@@ -278,7 +407,7 @@
   width: 33%;
   min-width: 300px;
   max-width: 380px;
-  background: rgba(#fff,0.3);
+  background: rgba(#fff,0.7);
   //border: 1px solid red;
   border-radius: 10px;
   padding: 30px;

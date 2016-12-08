@@ -14,10 +14,22 @@
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>
-			<div class="blueWall_menuLink"><a class="blueWall_link">Мои Работы</a><a class="blueWall_link">Блог</a><a class="blueWall_link">Обо мне</a><a class="blueWall_link">Авторизация</a></div>
+			<div class="blueWall_menuLink"><a href="mywork.php" class="blueWall_link BERNIERRegular">Мои Работы</a><a href="blog.php" class="blueWall_link BERNIERRegular">Блог</a><a href="about.php" class="blueWall_link BERNIERRegular doubleDash">Обо мне</a><a href="authorithation.php" class="blueWall_link BERNIERRegular">Авторизация</a></div>
 		</div>
 		<main class="wrapperAboutPage">
 			<section class="pageAbout__Desctop">
+				<div class="verticalParrallaxWpap">
+					<div class="vertParralax_layer parralax_layer1"></div>
+					<div class="vertParralax_layer parralax_layer2"></div>
+					<div class="vertParralax_layer parralax_layer3"></div>
+					<div class="vertParralax_layer parralax_layer4"></div>
+					<div class="vertParralax_layer parralax_layer5"></div>
+					<div class="vertParralax_layer parralax_layer6"></div>
+					<div class="vertParralax_layer parralax_layer7"></div>
+					<div class="vertParralax_layer parralax_layer8"></div>
+					<div class="vertParralax_layer parralax_layer9"></div>
+					<div class="vertParralax_layer parralax_layer10"></div>
+				</div>
 				<header class="header__page">
 					<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
 							<svg class="wellcome__svg">
@@ -141,8 +153,81 @@
 				<!--script(src="https://code.jquery.com/jquery-2.2.4.js",integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=",crossorigin="anonymous")-->
 				<script src="../js/jquery.js" type="text/javascript"></script>
 				<script src="../js/main.js" type="text/javascript"></script>
-				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDKSYmYkeTAluiJKxtn4LXvOZD9xIeVM4M"></script>
+				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDPS7Xoznf9yJs6khW0ODkFuRGMKznCpI0"></script>
 			</section>
 		</main>
 	</body>
+	<!-- script(async defer).
+	google.maps.event.addDomListener(window, 'load', init);
+	var map;
+	function init() {
+	    var mapOptions = {
+	        center: new google.maps.LatLng(50.5024, 30.492495),
+	        zoom: 12,
+	        zoomControl: true,
+	        zoomControlOptions: {
+	            style: google.maps.ZoomControlStyle.DEFAULT,
+	        },
+	        disableDoubleClickZoom: true,
+	        mapTypeControl: true,
+	        mapTypeControlOptions: {
+	            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+	        },
+	        scaleControl: true,
+	        scrollwheel: true,
+	        panControl: true,
+	        streetViewControl: true,
+	        draggable: true,
+	        overviewMapControl: true,
+	        overviewMapControlOptions: {
+	            opened: false,
+	        },
+	        mapTypeId: google.maps.MapTypeId.ROADMAP,
+	    }
+	    var mapElement = document.getElementById('js_connectMap');
+	    var map = new google.maps.Map(mapElement, mapOptions);
+	    var locations = [
+	        ['Я', 'undefined', 'undefined', 'undefined', 'undefined', 50.507087, 30.497258, 'https://mapbuildr.com/assets/img/markers/hollow-pin-blue.png']
+	    ];
+	    for (i = 0; i < locations.length; i++) {
+	        if (locations[i][1] == 'undefined') {
+	            description = '';
+	        } else {
+	            description = locations[i][1];
+	        }
+	        if (locations[i][2] == 'undefined') {
+	            telephone = '';
+	        } else {
+	            telephone = locations[i][2];
+	        }
+	        if (locations[i][3] == 'undefined') {
+	            email = '';
+	        } else {
+	            email = locations[i][3];
+	        }
+	        if (locations[i][4] == 'undefined') {
+	            web = '';
+	        } else {
+	            web = locations[i][4];
+	        }
+	        if (locations[i][7] == 'undefined') {
+	            markericon = '';
+	        } else {
+	            markericon = locations[i][7];
+	        }
+	        marker = new google.maps.Marker({
+	            icon: markericon,
+	            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+	            map: map,
+	            title: locations[i][0],
+	            desc: description,
+	            tel: telephone,
+	            email: email,
+	            web: web
+	        });
+	        link = '';
+	    }
+	
+	}
+	-->
 </html>
