@@ -17,6 +17,9 @@
   align-items: center;
   height: 55px;
   border-bottom: 1px solid rgba(#fff,0.5);
+  @include breakpoint(phone){
+    flex-direction: column;
+  }
 }
 .footer__row{
   display: flex;
@@ -26,6 +29,13 @@
   margin:0 20px;
   font-size:1rem;
   color:#fff;
+  @include breakpoint(phone){
+    margin:0 15px;
+    margin-left:0;
+  }
+}
+.footer_block_forLink{
+  display: flex;
 }
 .footer__svg{
   fill:rgba(#fff,0.6);
@@ -37,4 +47,7 @@
 .footer__text{
   margin: 0 auto;
   opacity: 0.6;
+  @include breakpoint(phone){
+    margin: auto auto;
+  }
 }

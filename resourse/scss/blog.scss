@@ -1,21 +1,41 @@
 .pageBlog__Desctop{
   width: 100%;
-
   min-height: 650px;
-  //border: 1px solid red;
   display: flex;
   justify-content: flex-start;
   position: relative;
   padding-bottom:130px;
+  @include breakpoint(tablet){
+    width: 100vw;
+  }
 }
 .column__1_blog{
+  transition: 1s;
   width:25%;
-  //border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   min-width: 250px;
   max-width:320px;
+  @include breakpoint(tablet){
+    position: absolute;
+    width:50px;
+    max-height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #00bfa5;
+    left: -25px;
+    top: 0;
+    min-width: 0;
+    &:hover{
+      width:250px;
+      overflow: visible;
+      max-height: 100%;
+    }
+    &:hover .column__1_blog__line{
+      opacity: 1;
+    }
+  }
 }
 .column__1_blog__line{
   width: 100%;
@@ -29,13 +49,22 @@
   &:hover{
     color:#00bfa5;
   }
+  @include breakpoint(tablet){
+    opacity: 0;
+    color:rgba(#fff,0.7);
+    &:hover{
+      color:rgba(#fff,1);
+    }
+  }
 }
 .activeStroke_blogThema{
   border-right: 2px solid #00bfa5;
   font-family: "robotoBold";
   font-weight: bold;
   color:#00bfa5;
-
+  @include breakpoint(tablet){
+    color:rgba(#fff,1);
+  }
 }
 .column__2_blog{
   width:75%;
@@ -44,6 +73,10 @@
   flex-direction: column;
   align-items: flex-start;
   padding-left:100px;
+  @include breakpoint(tablet){
+    width: 95%;
+    padding-left:30px;
+  }
 }
 .block__column__2_blog{
   width:100%;

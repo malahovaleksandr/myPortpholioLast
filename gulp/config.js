@@ -8,6 +8,7 @@ module.exports = {
             dist: 'public/page'
         },
         scss: {
+            srcWatch: ['resourse/scss/*.scss','resourse/scss/add/*.scss'],
             src: 'resourse/scss/main.scss',
             dist: 'public/css/'
         },
@@ -16,10 +17,14 @@ module.exports = {
             dist: 'public/php'
         },
         js: {
+            srcWatch: ['resourse/js/*/*.js','resourse/js/*.js'],
+            srcWork: 'resourse/js/myWork/*.js',
             src: 'resourse/js/*.js',
             dist: 'public/js/'
         },
         image: {
+            srcParralax: 'resourse/img/parralax/*.*',
+            distParralax: 'public/image/parralax/',
             src: 'resourse/img/*.*',
             dist: 'public/image/'
         },

@@ -8,7 +8,7 @@ $(document).ready(function(){
 
     //нажимаем на кнопку Авторизация и переворачивается блок с полями для входа
     buttonAuthorithation.on('click',function(){
-        console.log('показать бэк');
+        //console.log('показать бэк');
       setTimeout(function(){frontBlock.toggleClass('display_none')}, 200);
       setTimeout(function(){backBlock.toggleClass('display_none')}, 200);
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
 
       //нажимаем на кнопку На главнуб и переворачивается блок с полями для входа
       buttonMainBackRevers.on('click',function(e){
-          console.log('показать фронт');
+          //console.log('показать фронт');
         e.preventDefault();
         setTimeout(function(){frontBlock.toggleClass('display_none')}, 200);
         setTimeout(function(){backBlock.toggleClass('display_none')}, 200);

@@ -135,17 +135,19 @@
 					</div>
 				</div>
 				<footer class="footer">
-					<div class="footer_column"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация
-							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
-									</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--github"></use>
-									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--vk"></use>
-									</svg></a></div></a></div>
+					<div class="footer_column">
+						<div class="footer_block_forLink"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация</a></div>
+						<div class="footer__row marginLeftAutoPhone"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
+								</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--github"></use>
+								</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--vk"></use>
+								</svg></a></div>
+					</div>
 					<div class="footer_column">
 						<div class="footer__text">© Александр Малахов | 2016</div>
 					</div>
@@ -156,78 +158,6 @@
 				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDPS7Xoznf9yJs6khW0ODkFuRGMKznCpI0"></script>
 			</section>
 		</main>
+		<script src="../js/mainWork.js" type="text/javascript"></script>
 	</body>
-	<!-- script(async defer).
-	google.maps.event.addDomListener(window, 'load', init);
-	var map;
-	function init() {
-	    var mapOptions = {
-	        center: new google.maps.LatLng(50.5024, 30.492495),
-	        zoom: 12,
-	        zoomControl: true,
-	        zoomControlOptions: {
-	            style: google.maps.ZoomControlStyle.DEFAULT,
-	        },
-	        disableDoubleClickZoom: true,
-	        mapTypeControl: true,
-	        mapTypeControlOptions: {
-	            style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
-	        },
-	        scaleControl: true,
-	        scrollwheel: true,
-	        panControl: true,
-	        streetViewControl: true,
-	        draggable: true,
-	        overviewMapControl: true,
-	        overviewMapControlOptions: {
-	            opened: false,
-	        },
-	        mapTypeId: google.maps.MapTypeId.ROADMAP,
-	    }
-	    var mapElement = document.getElementById('js_connectMap');
-	    var map = new google.maps.Map(mapElement, mapOptions);
-	    var locations = [
-	        ['Я', 'undefined', 'undefined', 'undefined', 'undefined', 50.507087, 30.497258, 'https://mapbuildr.com/assets/img/markers/hollow-pin-blue.png']
-	    ];
-	    for (i = 0; i < locations.length; i++) {
-	        if (locations[i][1] == 'undefined') {
-	            description = '';
-	        } else {
-	            description = locations[i][1];
-	        }
-	        if (locations[i][2] == 'undefined') {
-	            telephone = '';
-	        } else {
-	            telephone = locations[i][2];
-	        }
-	        if (locations[i][3] == 'undefined') {
-	            email = '';
-	        } else {
-	            email = locations[i][3];
-	        }
-	        if (locations[i][4] == 'undefined') {
-	            web = '';
-	        } else {
-	            web = locations[i][4];
-	        }
-	        if (locations[i][7] == 'undefined') {
-	            markericon = '';
-	        } else {
-	            markericon = locations[i][7];
-	        }
-	        marker = new google.maps.Marker({
-	            icon: markericon,
-	            position: new google.maps.LatLng(locations[i][5], locations[i][6]),
-	            map: map,
-	            title: locations[i][0],
-	            desc: description,
-	            tel: telephone,
-	            email: email,
-	            web: web
-	        });
-	        link = '';
-	    }
-	
-	}
-	-->
 </html>

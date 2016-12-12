@@ -12,6 +12,12 @@ html, body {
 	width:100%;
 	height:100%;
 	position: relative;
+	@include breakpoint(tablet){
+		font-size: 15px;
+	}
+	@include breakpoint(phone){
+		font-size: 14px;
+	}
 }
 .wrap_parralax{
 	width: 100%;
@@ -20,64 +26,153 @@ html, body {
 	overflow: hidden;
 	//border: 1px solid red;
 	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
 }
 	.parralax_layer{
 		position: absolute;
-		width: 100%;
-		height: 100%;
+		width: 112%;
+		height: 104%;
 		top: 0;
-		left: 0;
-
-	 }
-	.parralax_layer10{
-		background:url(../image/1cloud_PNG5.png);
+		left:0;
+		right: 0;
+		bottom: 0;
 		background-repeat: no-repeat;
 		background-position: center;
+		background-size: cover;
+	 }
+
+
+	.parralax_layer10{
+		background:url("../image/parralax/cloud_PNG5-1900-min.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@include breakpoint(point1800){background:url("../image/parralax/cloud_PNG5-1800-min.png");}
+		@include breakpoint(point1600){background:url("../image/parralax/cloud_PNG5-1600-min.png");}
+		@include breakpoint(point1366){background:url("../image/parralax/cloud_PNG5-1366-min.png");}
+		@include breakpoint(point1240){background:url("../image/parralax/cloud_PNG5-1240-min.png");}
+		@include breakpoint(point1024){background:url("../image/parralax/cloud_PNG5-1024-min.png");}
+		@include breakpoint(tablet){background:url("../image/parralax/cloud_PNG5-768-min.png");}
+		@include breakpoint(phone){background:url("../background-600-min.png");}
 	}
 .parralax_layer9{
-	background:url(../image/2Layer1.png);
+	background:url("../image/parralax/Layer 1-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 1-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 1-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 1-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 1-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 1-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 1-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer8{
-	background:url(../image/3Layer2.png);
-	background-repeat: no-repeat;
+	background:url("../image/parralax/Layer 2-1900-min.png");
+
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 2-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 2-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 2-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 2-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 2-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 2-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer7{
-	background:url(../image/4sky3.png);
+	background:url("../image/parralax/sky-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/sky-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/sky-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/sky-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/sky-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/sky-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/sky-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer6{
-	  background:url(../image/5Layer4.png);
+	  background:url("../image/parralax/Layer 4-1900-min.png");
 	  background-repeat: no-repeat;
 	  background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 4-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 4-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 4-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 4-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 4-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 768-min.png")}
+	@include breakpoint(phone){display: none;}
   }
 .parralax_layer5{
-	background:url(../image/6Layer6.png);
+	background:url("../image/parralax/Layer 6-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 6-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 6-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 6-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 6-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 6-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 6-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer4{
-	background:url(../image/7cloud_PNG4.png);
+	background:url("../image/parralax/cloud_PNG4-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/cloud_PNG4-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/cloud_PNG4-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/cloud_PNG4-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/cloud_PNG4-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/cloud_PNG4-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/cloud_PNG4-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer3{
-	background:url(../image/8Layer7.png);
+	background:url("../image/parralax/Layer 7-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 7-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 7-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 7-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 7-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 7-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 7-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer2{
-	background:url(../image/9Layer8.png);
+	background:url("../image/parralax/Layer 8-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 8-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 8-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 8-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 8-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 8-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 8-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .parralax_layer1{
-	background:url(../image/10Layer5-9.png);
+	background:url("../image/parralax/Layer 5-1900-min.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
+	@include breakpoint(point1800){background:url("../image/parralax/Layer 5-1800-min.png");}
+	@include breakpoint(point1600){background:url("../image/parralax/Layer 5-1600-min.png");}
+	@include breakpoint(point1366){background:url("../image/parralax/Layer 5-1366-min.png");}
+	@include breakpoint(point1240){background:url("../image/parralax/Layer 5-1240-min.png");}
+	@include breakpoint(point1024){background:url("../image/parralax/Layer 5-1024-min.png");}
+	@include breakpoint(tablet){background:url("../image/parralax/Layer 5-768-min.png");}
+	@include breakpoint(phone){display: none;}
 }
 .wrapper_index{
 	width: 100%;
@@ -344,6 +439,11 @@ html, body {
 
 .marginLeft30{	margin-left:30px;}
 .marginLeftAuto{	margin-left:auto;}
+.marginLeftAutoPhone{
+	margin-left:auto;
+	@include breakpoint(phone){margin-left:0;	}
+}
+
 
 .fillLightGrey{fill:#faf8f0;}
 .fillWihte{fill:#fff;}
@@ -394,5 +494,9 @@ html, body {
 	fill:rgba(#fff,0.7);
 	&:hover{
 		fill:rgba(#fff,1);
+	}
+	@include breakpoint(phone){
+		width:20px;
+		height: 20px;
 	}
 }

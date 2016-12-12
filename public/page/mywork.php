@@ -19,16 +19,7 @@
 		<main class="wrapperAboutPage">
 			<section class="pageAbout__Desctop">
 				<div class="verticalParrallaxWpap">
-					<div class="vertParralax_layer parralax_layer1"></div>
-					<div class="vertParralax_layer parralax_layer2"></div>
-					<div class="vertParralax_layer parralax_layer3"></div>
-					<div class="vertParralax_layer parralax_layer4"></div>
-					<div class="vertParralax_layer parralax_layer5"></div>
-					<div class="vertParralax_layer parralax_layer6"></div>
-					<div class="vertParralax_layer parralax_layer7"></div>
-					<div class="vertParralax_layer parralax_layer8"></div>
-					<div class="vertParralax_layer parralax_layer9"></div>
-					<div class="vertParralax_layer parralax_layer10"></div>
+					<div class="vertParralax_layer parralax_Allimage"></div>
 				</div>
 				<header class="header__page">
 					<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">
@@ -108,7 +99,7 @@
 					<use xlink:href="../image/sprite.svg#icon--about_header" class="svg_work"></use>
 				</svg>
 			</div>
-			<section class="pageMyWork_lastDesktop">
+			<section class="pageMyWork_lastDesktop js_sectionBlur">
 				<div class="flexCenterContext">
 					<div class="blockFeedback"><img src="../image/kov.png" alt="ковычки" class="image__kovichki">
 						<div class="textFeedback robotoRegular">
@@ -153,17 +144,19 @@
 					<div class="block_blur"></div>
 				</div>
 				<footer class="footer">
-					<div class="footer_column"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация
-							<div class="footer__row marginLeftAuto"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
-									</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--github"></use>
-									</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
-									<svg class="footer__svg">
-										<use xlink:href="../image/sprite.svg#icon--vk"></use>
-									</svg></a></div></a></div>
+					<div class="footer_column">
+						<div class="footer_block_forLink"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация</a></div>
+						<div class="footer__row marginLeftAutoPhone"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--Facebook"></use>
+								</svg></a><a href="https://github.com/malahovaleksandr" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--github"></use>
+								</svg></a><a href="https://vk.com/id6734152" target="_blank" class="block__linkForSvg">
+								<svg class="footer__svg">
+									<use xlink:href="../image/sprite.svg#icon--vk"></use>
+								</svg></a></div>
+					</div>
 					<div class="footer_column">
 						<div class="footer__text">© Александр Малахов | 2016</div>
 					</div>

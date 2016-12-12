@@ -50,24 +50,34 @@ gulp.task('svg_sprite', function() {
         .pipe(gulp.dest($.config.paths.svg.dist));
 });
 ///подключаем JS c помощью broserfy
-// gulp.task('js_process', function() {
-//        gulp.src($.config.paths.js.src)
-//         .pipe(sourcemaps.init())
-//         .pipe(concat('main.js'))
-//        .pipe(browserify())
-//         .pipe(minify())
-//         .pipe(sourcemaps.write())
-//         .pipe(gulp.dest($.config.paths.js.dist))
-// });
-///собираем  JS в один файл с мапами
-gulp.task('scripts', function() {
-    return gulp.src($.config.paths.js.src)
+gulp.task('js_process', function() {
+       gulp.src($.config.paths.js.src)
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
+       .pipe(browserify())
         .pipe(minify())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest($.config.paths.js.dist));
+        .pipe(gulp.dest($.config.paths.js.dist))
 });
+///подключаем JS c помощью broserfy
+gulp.task('js_processWork', function() {
+    gulp.src($.config.paths.js.srcWork)
+        .pipe(sourcemaps.init())
+        .pipe(concat('mainWork.js'))
+        .pipe(browserify())
+        .pipe(minify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest($.config.paths.js.dist))
+});
+///собираем  JS в один файл с мапами
+// gulp.task('scripts', function() {
+//     return gulp.src($.config.paths.js.src)
+//         .pipe(sourcemaps.init())
+//         .pipe(concat('main.js'))
+//         .pipe(minify())
+//         .pipe(sourcemaps.write())
+//         .pipe(gulp.dest($.config.paths.js.dist));
+// });
 
 ///подключаем JADEPHP INDEX.HTML to Index.php выбираю каким лучше компилировать в php
 gulp.task('jadeIndexPhp', function() {
@@ -109,18 +119,24 @@ gulp.task('image', function(){
         .pipe(imagemin())
         .pipe(gulp.dest($.config.paths.image.dist));
 });
-
+//для паралакса картнки
+gulp.task('imageParralax', function(){
+    gulp.src($.config.paths.image.srcParralax)
+        .pipe(imagemin())
+        .pipe(gulp.dest($.config.paths.image.distParralax));
+});
 ///подключаем WATCH
 gulp.task('watch', function () {
 
     gulp.watch($.config.paths.jade.srcWatch, ['jadePhp','jadeIndexPhp']).on('change', browserSync.reload);
     gulp.watch($.config.paths.jade.srcIndex, ['jadeIndexPhp']).on('change', browserSync.reload);
-    gulp.watch($.config.paths.watch.src, ['scss']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.scss.srcWatch, ['scss']).on('change', browserSync.reload);
     gulp.watch($.config.paths.svg.src, ['svg_sprite']).on('change', browserSync.reload);
-    gulp.watch($.config.paths.js.src, ['scripts']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.js.srcWatch, ['js_process','js_processWork']).on('change', browserSync.reload);
     gulp.watch($.config.paths.php.src, ['PHPFiles']).on('change', browserSync.reload);//проверка изменений php файлов
     gulp.watch($.config.paths.font.src, ['Fonts']).on('change', browserSync.reload);
     gulp.watch($.config.paths.image.src, ['image']).on('change', browserSync.reload);
+    gulp.watch($.config.paths.image.srcParralax, ['imageParralax']).on('change', browserSync.reload);
 });
 ///подключаем Server
 gulp.task('serve', function() {
@@ -134,7 +150,7 @@ gulp.task('clean', function () {
             .pipe(clean());
 });
 
-gulp.task('default', [ 'scss','jadePhp','Fonts','image','scripts','jadeIndexPhp','PHPFiles','svg_sprite','serve','watch']);
+gulp.task('default', [ 'scss','jadePhp','Fonts','js_process','jadeIndexPhp','PHPFiles','svg_sprite','serve','watch']);
 // gulp.task('default', gulp.series(
 //     'clean',
 //     gulp.parallel(
