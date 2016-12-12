@@ -59,16 +59,8 @@
 					<use xlink:href="../image/sprite.svg#icon--works_header" class="svg_work"></use>
 				</svg>
 			</div>
-			<section class="pageAbout__Desctop gray_desctop flexRow">
-				<div class="blockHalfWidth flexCenterContext">
-					<div class="wrapBlock_60procent flexCenterContext flexColumn">
-						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100">САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО</div>
-						<div class="line_workflow robotoMedium">HTML, CSS, PHP, GULP</div><a href="" class="buttobLookSite flexCenterContext">
-							<svg class="svg_link">
-								<use xlink:href="../image/sprite.svg#icon--link" class="svg_link"></use>
-							</svg>
-							<div class="buttobLookSite__text robotoMedium">Посмотреть сайт</div></a>
-					</div>
+			<section class="pageAbout__Desctop gray_desctop adaptiveClass">
+				<div class="blockHalfWidth__adaptive flexCenterContext">
 					<div class="wrapSlideshow flexCenterContext">
 						<ul class="ul_slider">
 							<li class="li__slider flexCenterContext li__slider_activ"><img src="../image/sliderSite/slider1.jpg" alt="фото сайта" class="li__slider__image"></li>
@@ -77,15 +69,25 @@
 							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/slider4.jpg" alt="фото сайта" class="li__slider__image"></li>
 						</ul>
 					</div>
+					<div class="wrapBlock_60procent flexCenterContext flexColumn">
+						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100">САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО</div>
+						<div class="line_workflow robotoMedium">HTML, CSS, PHP, GULP</div><a href="" class="buttobLookSite flexCenterContext">
+							<svg class="svg_link">
+								<use xlink:href="../image/sprite.svg#icon--link" class="svg_link"></use>
+							</svg>
+							<div class="buttobLookSite__text robotoMedium">Посмотреть сайт</div></a>
+					</div>
 				</div>
-				<div class="blockHalfWidth flexJustEnd padding0">
+				<div class="blockHalfWidth__adaptive flexJustEnd padding0">
 					<div class="arrowForSlider">
 						<div class="arrowForSlider_side arrow__slideNext flexCenterContext js_arrow__slideNext">
+							<div class="wall_for_arrowForSlider"></div>
 							<svg class="svg_arrow_slider">
 								<use xlink:href="../image/sprite.svg#icon--portf_arrow_down" class="svg_arrow_slider"></use>
 							</svg>
 						</div>
 						<div class="arrowForSlider_side arrow__slidePrew flexCenterContext js_arrow__slidePrew">
+							<div class="wall_for_arrowForSlider"></div>
 							<svg class="svg_arrow_slider">
 								<use xlink:href="../image/sprite.svg#icon--portf_arrow_up" class="svg_arrow_slider"></use>
 							</svg>
@@ -100,7 +102,7 @@
 				</svg>
 			</div>
 			<section class="pageMyWork_lastDesktop js_sectionBlur">
-				<div class="flexCenterContext">
+				<div class="wrapblocFeedBack">
 					<div class="blockFeedback"><img src="../image/kov.png" alt="ковычки" class="image__kovichki">
 						<div class="textFeedback robotoRegular">
 							Этот парень проходил обучение веб-разработке не где-то,
@@ -128,7 +130,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="wrapper__blockSandMail absoluteCenter flexCenterContext flexColumn">
+				<div class="wrapper__blockSandMail flexCenterContext flexColumn">
 					<div class="blockSandMail__lineTitle BERNIERRegular doubleDash">СВЯЗАТЬСЯ СО МНОЙ</div>
 					<form method="POST" action="" class="form__sandMail flexColumn flexStart robotoRegular">
 						<input type="text" name="nameMailer" placeholder="Имя" class="inputForm js_inputName">

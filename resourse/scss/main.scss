@@ -19,6 +19,7 @@ html, body {
 		font-size: 14px;
 	}
 }
+
 .wrap_parralax{
 	width: 100%;
 	height: 100%;
@@ -441,6 +442,7 @@ html, body {
 .marginLeftAuto{	margin-left:auto;}
 .marginLeftAutoPhone{
 	margin-left:auto;
+	@include breakpoint(tablet){margin-left:0;	}
 	@include breakpoint(phone){margin-left:0;	}
 }
 
@@ -476,6 +478,17 @@ html, body {
 .flexCenterContext{display: flex;align-items: center;justify-content: center;}
 .flexStart{align-items:center;justify-content: flex-start}
 .flexJustEnd{justify-content: flex-end}
+
+.adaptiveClass{
+	flex-direction: row;display: flex;
+	@include breakpoint(tablet){
+		flex-direction: column;
+	}
+	@include breakpoint(phone){
+		flex-direction: column;
+	}
+}
+
 ///footer
 .footer_index{
 	z-index: 2;

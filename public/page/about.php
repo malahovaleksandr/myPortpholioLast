@@ -19,16 +19,7 @@
 		<main class="wrapperAboutPage">
 			<section class="pageAbout__Desctop">
 				<div class="verticalParrallaxWpap">
-					<div class="vertParralax_layer parralax_layer1"></div>
-					<div class="vertParralax_layer parralax_layer2"></div>
-					<div class="vertParralax_layer parralax_layer3"></div>
-					<div class="vertParralax_layer parralax_layer4"></div>
-					<div class="vertParralax_layer parralax_layer5"></div>
-					<div class="vertParralax_layer parralax_layer6"></div>
-					<div class="vertParralax_layer parralax_layer7"></div>
-					<div class="vertParralax_layer parralax_layer8"></div>
-					<div class="vertParralax_layer parralax_layer9"></div>
-					<div class="vertParralax_layer parralax_layer10"></div>
+					<div class="vertParralax_layer parralax_Allimage"></div>
 				</div>
 				<header class="header__page">
 					<div class="header__links"><a href="https://www.facebook.com/sanek.maloff" target="_blank" class="wellcome__linkForSvg">

@@ -9,17 +9,17 @@
     width: 100vw;
   }
 }
-.column__1_blog{
+.column__1_blog {
   transition: 1s;
-  width:25%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   min-width: 250px;
-  max-width:320px;
-  @include breakpoint(tablet){
+  max-width: 320px;
+  @include breakpoint(tablet) {
     position: absolute;
-    width:50px;
+    width: 50px;
     max-height: 50px;
     border-radius: 25px;
     overflow: hidden;
@@ -27,12 +27,32 @@
     left: -25px;
     top: 0;
     min-width: 0;
-    &:hover{
-      width:250px;
+    &:hover {
+      width: 250px;
       overflow: visible;
       max-height: 100%;
     }
-    &:hover .column__1_blog__line{
+    &:hover .column__1_blog__line {
+      opacity: 1;
+    }
+
+  }
+  @include breakpoint(phone) {
+    position: absolute;
+    width: 50px;
+    max-height: 50px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #00bfa5;
+    left: -25px;
+    top: 0;
+    min-width: 0;
+    &:hover {
+      width: 250px;
+      overflow: visible;
+      max-height: 100%;
+    }
+    &:hover .column__1_blog__line {
       opacity: 1;
     }
   }
@@ -50,6 +70,13 @@
     color:#00bfa5;
   }
   @include breakpoint(tablet){
+    opacity: 0;
+    color:rgba(#fff,0.7);
+    &:hover{
+      color:rgba(#fff,1);
+    }
+  }
+  @include breakpoint(phone){
     opacity: 0;
     color:rgba(#fff,0.7);
     &:hover{
@@ -76,6 +103,10 @@
   @include breakpoint(tablet){
     width: 95%;
     padding-left:30px;
+  }
+  @include breakpoint(phone){
+    width: 100%;
+    padding-left:15px;
   }
 }
 .block__column__2_blog{

@@ -44,15 +44,9 @@ html(lang="ru")
                 .blockHalfWidth__titleText.BERNIERRegular.doubleDash МОИ РАБОТЫ
                 svg.svg_work.absoluteCenter
                     use(xlink:href="../image/sprite.svg#icon--works_header").svg_work
-            section.pageAbout__Desctop.gray_desctop.flexRow
-                .blockHalfWidth.flexCenterContext
-                    .wrapBlock_60procent.flexCenterContext.flexColumn
-                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100 САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
-                        .line_workflow.robotoMedium HTML, CSS, PHP, GULP
-                        a(href="").buttobLookSite.flexCenterContext
-                            svg.svg_link
-                                use(xlink:href="../image/sprite.svg#icon--link").svg_link
-                            .buttobLookSite__text.robotoMedium Посмотреть сайт
+            section.pageAbout__Desctop.gray_desctop.adaptiveClass
+                .blockHalfWidth__adaptive.flexCenterContext
+
                     .wrapSlideshow.flexCenterContext
                         ul.ul_slider
                             li.li__slider.flexCenterContext.li__slider_activ
@@ -63,14 +57,22 @@ html(lang="ru")
                                 img(src="../image/sliderSite/slider3.jpg",alt="фото сайта").li__slider__image
                             li.li__slider.flexCenterContext
                                 img(src="../image/sliderSite/slider4.jpg",alt="фото сайта").li__slider__image
-                .blockHalfWidth.flexJustEnd.padding0
+                    .wrapBlock_60procent.flexCenterContext.flexColumn
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100 САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
+                        .line_workflow.robotoMedium HTML, CSS, PHP, GULP
+                        a(href="").buttobLookSite.flexCenterContext
+                            svg.svg_link
+                                use(xlink:href="../image/sprite.svg#icon--link").svg_link
+                            .buttobLookSite__text.robotoMedium Посмотреть сайт
+
+                .blockHalfWidth__adaptive.flexJustEnd.padding0
                     .arrowForSlider
                         .arrowForSlider_side.arrow__slideNext.flexCenterContext.js_arrow__slideNext
-
+                            .wall_for_arrowForSlider
                             svg.svg_arrow_slider
                                 use(xlink:href="../image/sprite.svg#icon--portf_arrow_down").svg_arrow_slider
                         .arrowForSlider_side.arrow__slidePrew.flexCenterContext.js_arrow__slidePrew
-
+                            .wall_for_arrowForSlider
                             svg.svg_arrow_slider
                                 use(xlink:href="../image/sprite.svg#icon--portf_arrow_up").svg_arrow_slider
 
@@ -81,7 +83,7 @@ html(lang="ru")
                     use(xlink:href="../image/sprite.svg#icon--about_header").svg_work
             section.pageMyWork_lastDesktop.js_sectionBlur
 
-                .flexCenterContext
+                .wrapblocFeedBack
                     .blockFeedback
                         img(src="../image/kov.png", alt="ковычки").image__kovichki
                         .textFeedback.robotoRegular.
@@ -104,7 +106,7 @@ html(lang="ru")
                             .flexColumn
                                 .avtor__feedback__text.robotoBold Зар Захаров
                                 .avtor__feedback__text.robotoRegular Преподаватель
-                .wrapper__blockSandMail.absoluteCenter.flexCenterContext.flexColumn
+                .wrapper__blockSandMail.flexCenterContext.flexColumn
                     .blockSandMail__lineTitle.BERNIERRegular.doubleDash СВЯЗАТЬСЯ СО МНОЙ
                     form(method="POST", action="").form__sandMail.flexColumn.flexStart.robotoRegular
                         input(type="text", name="nameMailer",placeholder="Имя").inputForm.js_inputName

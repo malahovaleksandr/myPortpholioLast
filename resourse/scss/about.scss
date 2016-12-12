@@ -69,6 +69,7 @@
   opacity: 0.8;
   @include breakpoint(phone){
     margin-bottom:30px;
+    font-size: 2.5rem;
   }
   &:hover{
     opacity: 1;
@@ -220,6 +221,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  @include breakpoint(tablet){    height:100%;  }
+  @include breakpoint(phone){    height:100%;  }
 
 }
   .imagePortfolio{
@@ -317,6 +320,8 @@
       font-size:3.9rem;
       line-height: 1.2;
       color:#373e42;
+      @include breakpoint(tablet){font-size:3.2rem;}
+      @include breakpoint(phone){font-size:2.2rem;}
     }
     .blockHalfWidth__titleText2{
       font-size:2.15rem;
@@ -329,6 +334,8 @@
       color:#373e42;
       margin-top:20px;
       margin-bottom:20px;
+      @include breakpoint(tablet){font-size:2rem;}
+      @include breakpoint(phone){font-size:2rem;}
     }
     .blockPhoto{
       max-width: 75%;

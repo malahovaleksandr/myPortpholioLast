@@ -1,5 +1,26 @@
 .wrapBlock_60procent{
   width: 65%;
+  @include breakpoint(tablet){    margin:30px 0 ;}
+  @include breakpoint(phone){    margin:20px 0;}
+}
+.blockHalfWidth__adaptive{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color:#455a64;
+  padding: 10px;
+  @include breakpoint(tablet){
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint(phone){
+    width: 100%;
+    height: auto;
+  }
 }
 .wrap__titleName{
   background: #faf8f0;
@@ -58,16 +79,26 @@
   top: 0;
   width: 100%;
   height: 70vh;
-  //border: 1px solid blue;
+ @include breakpoint(tablet){
+   position: relative;
+   height: 400px;
+   left:0;
+ }
+  @include breakpoint(phone){
+    position: relative;
+    height: 250px;
+    left:0;
+  }
 }
 .ul_slider{
-  width: 100%;
+  width: 90%;
   position: relative;
-  height: 100%  ;
+  height: 90%  ;
   overflow: hidden;
+  margin:0 auto;
 }
 .li__slider{
-  width: 100%;
+  height: 100%;
   position: absolute;
   top:-100%;
   left: 0;
@@ -78,8 +109,8 @@
   top: 50%;
 }
 .li__slider__image{
-  width: 90%;
-  height:auto;
+  //width: 90%;
+  height:100%;
 
 }
 .arrowForSlider{
@@ -110,16 +141,21 @@
 .svg_arrow_slider{
   width: 40px;
   fill:rgba(#fff,0.5);
+  z-index: 4;
 }
-
+.wall_for_arrowForSlider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000,0.6);
+}
 // КОНЕЦ  НАСТРОЙКА  СЛАЙДЕРА
 //НАСТРОЙКА ПОСЛЕДНЕГО ЭКРАНА С ОТПРАВКОЙ ПИСЬМА
 .pageMyWork_lastDesktop{
   width: 100%;
-
   height:100%;
   min-height: 100vh;
-  min-width: 900px;
+  //min-width: 750px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -128,8 +164,17 @@
   background: url('../image/bg1800.png');
   background-position: center;
   background-size: cover;
+  @include breakpoint(phone){    padding-bottom:130px;  }
 }
+.wrapblocFeedBack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(phone){
+    flex-direction: column;
+  }
 
+}
 .blockFeedback{
   width: 90%;
   max-width:380px;
@@ -182,14 +227,24 @@
   min-width: 300px;
   display: flex;
   flex-direction: column;
-  //border: 1px solid red;
   border-radius: 8px;
   overflow: hidden;
   height: 400px;
   padding-top:20px;
   z-index: 2;
-  //opacity: 0;
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  @include breakpoint(phone){
+    position: static;
+    margin-top:20px;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    background: rgba(#fff,0.5);
+  }
 }
 .blockSandMail__lineTitle{
   font-size: 2.2rem;
@@ -235,7 +290,12 @@
     border-right:2px solid #82cfc9;
   }
 }
-.wrapper__blur{z-index: 0;}
+.wrapper__blur{
+  z-index: 0;
+  @include breakpoint(phone){
+    display: none;
+  }
+}
 .block_blur{
   filter:blur(5px);
   width: 100%;

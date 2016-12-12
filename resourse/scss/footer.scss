@@ -17,9 +17,13 @@
   align-items: center;
   height: 55px;
   border-bottom: 1px solid rgba(#fff,0.5);
+  @include breakpoint(tablet){
+    flex-direction: column;
+  }
   @include breakpoint(phone){
     flex-direction: column;
   }
+
 }
 .footer__row{
   display: flex;
