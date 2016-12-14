@@ -9,8 +9,9 @@
     width: 100vw;
   }
 }
+
 .column__1_blog {
-  transition: 1s;
+  position: relative;
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,26 @@
       opacity: 1;
     }
   }
+}
+.invisible_menu{
+  position: relative;
+  height: 1px;
+  width: 100%;
+}
+.ul_column__1_blog{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.fixed_menu{
+  position: fixed;
+  width: 25%;
+  min-width: 250px;
+  max-width: 320px;
+  height: 1px;
+  top: 0;
+  left: 0;
+
 }
 .column__1_blog__line{
   width: 100%;

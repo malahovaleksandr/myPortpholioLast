@@ -84,28 +84,28 @@
 				</div>
 				<div class="blockHalfWidth__adaptive flexJustEnd padding0">
 					<div class="arrowForSlider">
-						<div class="arrowForSlider_side flexCenterContext js_arrow__slideNext">
+						<div class="arrowForSlider_side flexCenterContext js_arrow__slideNext js_arrow__slide">
 							<div class="wall_for_arrowForSlider"></div>
 							<svg class="svg_arrow_slider">
 								<use xlink:href="../image/sprite.svg#icon--portf_arrow_up" class="svg_arrow_slider"></use>
 							</svg>
 							<ul class="ul_slideshowSmall js_slideWrap_Small_next">
-								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно00000" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Итальяно1111" data-workflow="Mysql,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__prew li_slideSmall_active"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Итальяно2222" data-workflow="JavaScript,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Итальяно3333" data-workflow="NodeJS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно00000 сайт" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Итальяно1111 сайт" data-workflow="Mysql,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew li_slideSmall_active"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Итальяно2222 сайт" data-workflow="JavaScript,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Итальяно3333 сайт" data-workflow="NodeJS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
 							</ul>
 						</div>
-						<div class="arrowForSlider_side flexCenterContext js_arrow__slidePrew">
+						<div class="arrowForSlider_side flexCenterContext js_arrow__slidePrew js_arrow__slide">
 							<div class="wall_for_arrowForSlider"></div>
 							<svg class="svg_arrow_slider">
 								<use xlink:href="../image/sprite.svg#icon--portf_arrow_down" class="svg_arrow_slider"></use>
 							</svg>
 							<ul class="ul_slideshowSmall js_slideWrap_Small_prew">
-								<li class="li_slideSmall li_slideSmall__next li_slideSmall_active"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно0" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Миално1" data-workflow="Gulp,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Сабвей2" data-workflow="Git,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
-								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Курка3" data-workflow="SmartJs,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next li_slideSmall_active"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно0 сайт" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Миално1 сайт" data-workflow="Gulp,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Сабвей2 сайт" data-workflow="Git,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Курка3 сайт" data-workflow="SmartJs,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
 							</ul>
 						</div>
 					</div>

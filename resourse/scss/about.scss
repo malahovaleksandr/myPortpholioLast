@@ -330,6 +330,9 @@
       @include breakpoint(phone){font-size:2.2rem;}
     }
     .blockHalfWidth__titleText2{
+      animation: bounceIn 1s;
+      -webkit-animation: bounceIn 1s;
+      transition: 1s;
       font-size:2.15rem;
       width: 55%;
       display: flex;
