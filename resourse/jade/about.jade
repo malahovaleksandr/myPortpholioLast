@@ -11,6 +11,9 @@ html(lang="ru")
         link(rel="stylesheet" href="../css/main.css")
 
     body
+        .wrapLoader
+            .blockPercent
+            .percentCurent 01
         .wrapperBlueWall
             .blueWall__leftSide
             .blueWall__rightSide
@@ -42,7 +45,7 @@ html(lang="ru")
                         polygon( points="0,0   0,86   500.8,86   500.8,75.5")
                         polygon( points="1000,0   1000,86   500,86   500,75.5")
             section.pageAbout__Desctop.pageAbout__Desctop2
-                .blockHalfWidth
+                .blockHalfWidth__adaptive
                     .image_text_svg
                         svg.svg_about
                             use(xlink:href="../image/sprite.svg#icon--about_header").svg_about
@@ -51,7 +54,7 @@ html(lang="ru")
                         img(src="../image/my_photo.jpg", alt="фото автора").blockPhoto__image
                     .blockHalfWidth__titleText2.BERNIERRegular.doubleDash КТО Я
                     .blockHalfWidth__text.
-                        На этой земле бегаю уже 29 лет. Я с Украины родом.
+                        На этой земле бегаю уже 29 лет.
                          Чем я только не занимался?! Первый источник доходов
                          это игра в футбол! Кто то платит чтоб смотреть футбол,
                           я же получал деньги за то ,что играл! Потом продажа
@@ -66,14 +69,62 @@ html(lang="ru")
                             А вот следующая и пока последняя сфера деятельности - это уже веб разработка!И тут я стараюсь развиваться как могу! Этот сайт - моя визитная карточка.
 
 
-                .blockHalfWidth.marginLeft30
+                .blockHalfWidth__adaptive
                     .blockHalfWidth__titleText2.BERNIERRegular.doubleDash ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
-                    .blockHalfWidth__text.width60 Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    .blockHalfWidth__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
                     .column.robotoMedium.HalfWidth__circleTitle Frontend
-                    .column
+                    .column.circle__block
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="180").circle_2
+                            .circle__text.robotoMedium HTML 5
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="160").circle_2
+                            .circle__text.robotoMedium CSS 3
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="120").circle_2
+                            .circle__text.robotoMedium JS & Jquery
+
+
                     .column.robotoMedium.HalfWidth__circleTitle Backend
-                    .column
+                    .column.circle__block
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="180").circle_2
+                            .circle__text.robotoMedium PHP
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="160").circle_2
+                            .circle__text.robotoMedium mySQL
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="120").circle_2
+                            .circle__text.robotoMedium NodeJS & npm
                     .column.robotoMedium.HalfWidth__circleTitle Workflow
+                    .column.circle__block
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="180").circle_2
+                            .circle__text.robotoMedium GIT
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="160").circle_2
+                            .circle__text.robotoMedium GULP
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score="120").circle_2
+                            .circle__text.robotoMedium Bower
             section.pageAbout__Desctop.pageAbout__Desctop3
                 #js_connectMap.block__map
                 .block_withInfo

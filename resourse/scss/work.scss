@@ -12,14 +12,17 @@
   align-items: center;
   position: relative;
   color:#455a64;
-  padding: 10px;
+  padding: 20px;
+  padding-bottom:5px;
   @include breakpoint(tablet){
     width: 100%;
     height: auto;
+
   }
   @include breakpoint(phone){
     width: 100%;
     height: auto;
+    padding: 10px;
   }
 }
 .wrap__titleName{
@@ -98,6 +101,7 @@
   margin:0 auto;
 }
 .li__slider{
+  //transition: 1s;
   height: 100%;
   position: absolute;
   top:-100%;
@@ -108,35 +112,52 @@
 .li__slider_activ{
   top: 50%;
 }
+.li__slider_down{
+  top:150%;
+}
 .li__slider__image{
-  //width: 90%;
-  height:100%;
-
+  max-width: 90%;
+  max-height:100%;
 }
 .arrowForSlider{
   height: 30vh;
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 .arrowForSlider_side{
-  width: 50%;
+  width: 48%;
   height: 100% ;
   position: relative;
   cursor: pointer;
- // border: 1px solid black;
+ overflow: hidden;
   &:hover .svg_arrow_slider{
     fill:rgba(#fff,1);
   }
+  &:hover .wall_for_arrowForSlider {
+    background: rgba(#000,0.2);
+  }
 }
-.arrow__slideNext{
-   background: url('../image/sliderSite/slider4.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
- }
-.arrow__slidePrew{
-  background: url('../image/sliderSite/slider2.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+.slide__info{
+  position: absolute;
+  top: 0;
+  left:-100%;
+  opacity:0;
+}
+//.arrow__slideNext{
+//   background: url('../image/sliderSite/slider4.jpg');
+//  background-size: cover;
+//  background-repeat: no-repeat;
+// }
+//.arrow__slidePrew{
+//  background: url('../image/sliderSite/slider2.jpg');
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//}
+.arrow__slideImage{
+  width: auto;
+  height: 100%;
+
 }
 .svg_arrow_slider{
   width: 40px;
@@ -148,7 +169,27 @@
   width: 100%;
   height: 100%;
   background: rgba(#000,0.6);
+  z-index: 2;
 }
+.ul_slideshowSmall{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.li_slideSmall{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.li_slideSmall__prew{  top:150%;}
+.li_slideSmall__next{  top:-150%;}
+.li_slideSmall_active{  top:0;}
+
 // КОНЕЦ  НАСТРОЙКА  СЛАЙДЕРА
 //НАСТРОЙКА ПОСЛЕДНЕГО ЭКРАНА С ОТПРАВКОЙ ПИСЬМА
 .pageMyWork_lastDesktop{

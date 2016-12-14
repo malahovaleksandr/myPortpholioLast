@@ -11,6 +11,9 @@ html(lang="ru")
         link(rel="stylesheet" href="../css/main.css")
 
     body
+        .wrapLoader
+            .blockPercent
+            .percentCurent 01
         .wrapperBlueWall
             .blueWall__leftSide
             .blueWall__rightSide
@@ -47,35 +50,61 @@ html(lang="ru")
             section.pageAbout__Desctop.gray_desctop.adaptiveClass
                 .blockHalfWidth__adaptive.flexCenterContext
 
-                    .wrapSlideshow.flexCenterContext
+                    .wrapSlideshow.flexCenterContext.js_blockSlide
                         ul.ul_slider
+                            li.li__slider.flexCenterContext
+                                img(src="../image/sliderSite/0.jpg", name="1").li__slider__image
                             li.li__slider.flexCenterContext.li__slider_activ
-                                img(src="../image/sliderSite/slider1.jpg",alt="фото сайта").li__slider__image
+                                img(src="../image/sliderSite/1.jpg",name="2").li__slider__image
                             li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/slider2.jpg",alt="фото сайта").li__slider__image
+                                img(src="../image/sliderSite/2.jpg",name="3").li__slider__image
                             li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/slider3.jpg",alt="фото сайта").li__slider__image
-                            li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/slider4.jpg",alt="фото сайта").li__slider__image
+                                img(src="../image/sliderSite/3.jpg",name="4").li__slider__image
                     .wrapBlock_60procent.flexCenterContext.flexColumn
-                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100 САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
-                        .line_workflow.robotoMedium HTML, CSS, PHP, GULP
-                        a(href="").buttobLookSite.flexCenterContext
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100.js_nameSite 11САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
+                        .line_workflow.robotoMedium.js_workflow HTML, CSS, PHP, GULP
+                        a(href="").buttobLookSite.flexCenterContext.js_linkForSite
                             svg.svg_link
                                 use(xlink:href="../image/sprite.svg#icon--link").svg_link
                             .buttobLookSite__text.robotoMedium Посмотреть сайт
 
                 .blockHalfWidth__adaptive.flexJustEnd.padding0
                     .arrowForSlider
-                        .arrowForSlider_side.arrow__slideNext.flexCenterContext.js_arrow__slideNext
-                            .wall_for_arrowForSlider
-                            svg.svg_arrow_slider
-                                use(xlink:href="../image/sprite.svg#icon--portf_arrow_down").svg_arrow_slider
-                        .arrowForSlider_side.arrow__slidePrew.flexCenterContext.js_arrow__slidePrew
+
+                        .arrowForSlider_side.flexCenterContext.js_arrow__slideNext
                             .wall_for_arrowForSlider
                             svg.svg_arrow_slider
                                 use(xlink:href="../image/sprite.svg#icon--portf_arrow_up").svg_arrow_slider
-
+                            ul.ul_slideshowSmall.js_slideWrap_Small_next
+                                li.li_slideSmall.li_slideSmall__prew
+                                    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно00000",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="1").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__prew
+                                    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Итальяно1111",data-workflow="Mysql,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="2").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__prew.li_slideSmall_active
+                                    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Итальяно2222",data-workflow="JavaScript,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="3").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__prew
+                                    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Итальяно3333",data-workflow="NodeJS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="4").arrow__slideImage
+                        .arrowForSlider_side.flexCenterContext.js_arrow__slidePrew
+                            .wall_for_arrowForSlider
+                            svg.svg_arrow_slider
+                                use(xlink:href="../image/sprite.svg#icon--portf_arrow_down").svg_arrow_slider
+                            ul.ul_slideshowSmall.js_slideWrap_Small_prew
+                                li.li_slideSmall.li_slideSmall__next.li_slideSmall_active
+                                    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно0",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="1").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__next
+                                    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Миално1",data-workflow="Gulp,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="2").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__next
+                                    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Сабвей2",data-workflow="Git,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="3").arrow__slideImage
+                                li.li_slideSmall.li_slideSmall__next
+                                    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Курка3",data-workflow="SmartJs,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                    data-number="4").arrow__slideImage
 
             .wrap__titleName.flexCenterContext.background_white
                 .blockHalfWidth__titleText.BERNIERRegular.doubleDash ЧТО ОБО МНЕ ГОВОРЯТ

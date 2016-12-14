@@ -11,6 +11,10 @@
 		<link rel="stylesheet" href="../css/main.css">
 	</head>
 	<body>
+		<div class="wrapLoader">
+			<div class="blockPercent"></div>
+			<div class="percentCurent">01</div>
+		</div>
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>
@@ -54,7 +58,7 @@
 				</div>
 			</section>
 			<section class="pageAbout__Desctop pageAbout__Desctop2">
-				<div class="blockHalfWidth">
+				<div class="blockHalfWidth__adaptive">
 					<div class="image_text_svg">
 						<svg class="svg_about">
 							<use xlink:href="../image/sprite.svg#icon--about_header" class="svg_about"></use>
@@ -64,7 +68,7 @@
 					<div class="blockPhoto"><img src="../image/my_photo.jpg" alt="фото автора" class="blockPhoto__image"></div>
 					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash">КТО Я</div>
 					<div class="blockHalfWidth__text">
-						На этой земле бегаю уже 29 лет. Я с Украины родом.
+						На этой земле бегаю уже 29 лет.
 						 Чем я только не занимался?! Первый источник доходов
 						 это игра в футбол! Кто то платит чтоб смотреть футбол,
 						  я же получал деньги за то ,что играл! Потом продажа
@@ -82,14 +86,81 @@
 						
 					</div>
 				</div>
-				<div class="blockHalfWidth marginLeft30">
+				<div class="blockHalfWidth__adaptive">
 					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash">ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН</div>
-					<div class="blockHalfWidth__text width60">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
+					<div class="blockHalfWidth__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Frontend</div>
-					<div class="column"></div>
+					<div class="column circle__block">
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="180" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">HTML 5</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="160" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">CSS 3</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="120" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">JS & Jquery</div>
+						</div>
+					</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Backend</div>
-					<div class="column"></div>
+					<div class="column circle__block">
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="180" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">PHP</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="160" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">mySQL</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="120" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">NodeJS & npm</div>
+						</div>
+					</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Workflow</div>
+					<div class="column circle__block">
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="180" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">GIT</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="160" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">GULP</div>
+						</div>
+						<div class="wrap_circle_svg">
+							<svg class="circle__svg">
+								<circle class="circle_1"></circle>
+								<circle data-score="120" class="circle_2"></circle>
+							</svg>
+							<div class="circle__text robotoMedium">Bower</div>
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="pageAbout__Desctop pageAbout__Desctop3">

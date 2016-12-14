@@ -11,6 +11,10 @@
 		<link rel="stylesheet" href="../css/main.css">
 	</head>
 	<body>
+		<div class="wrapLoader">
+			<div class="blockPercent"></div>
+			<div class="percentCurent">01</div>
+		</div>
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>
@@ -61,17 +65,17 @@
 			</div>
 			<section class="pageAbout__Desctop gray_desctop adaptiveClass">
 				<div class="blockHalfWidth__adaptive flexCenterContext">
-					<div class="wrapSlideshow flexCenterContext">
+					<div class="wrapSlideshow flexCenterContext js_blockSlide">
 						<ul class="ul_slider">
-							<li class="li__slider flexCenterContext li__slider_activ"><img src="../image/sliderSite/slider1.jpg" alt="фото сайта" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/slider2.jpg" alt="фото сайта" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/slider3.jpg" alt="фото сайта" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/slider4.jpg" alt="фото сайта" class="li__slider__image"></li>
+							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/0.jpg" name="1" class="li__slider__image"></li>
+							<li class="li__slider flexCenterContext li__slider_activ"><img src="../image/sliderSite/1.jpg" name="2" class="li__slider__image"></li>
+							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/2.jpg" name="3" class="li__slider__image"></li>
+							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/3.jpg" name="4" class="li__slider__image"></li>
 						</ul>
 					</div>
 					<div class="wrapBlock_60procent flexCenterContext flexColumn">
-						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100">САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО</div>
-						<div class="line_workflow robotoMedium">HTML, CSS, PHP, GULP</div><a href="" class="buttobLookSite flexCenterContext">
+						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100 js_nameSite">11САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО</div>
+						<div class="line_workflow robotoMedium js_workflow">HTML, CSS, PHP, GULP</div><a href="" class="buttobLookSite flexCenterContext js_linkForSite">
 							<svg class="svg_link">
 								<use xlink:href="../image/sprite.svg#icon--link" class="svg_link"></use>
 							</svg>
@@ -80,17 +84,29 @@
 				</div>
 				<div class="blockHalfWidth__adaptive flexJustEnd padding0">
 					<div class="arrowForSlider">
-						<div class="arrowForSlider_side arrow__slideNext flexCenterContext js_arrow__slideNext">
-							<div class="wall_for_arrowForSlider"></div>
-							<svg class="svg_arrow_slider">
-								<use xlink:href="../image/sprite.svg#icon--portf_arrow_down" class="svg_arrow_slider"></use>
-							</svg>
-						</div>
-						<div class="arrowForSlider_side arrow__slidePrew flexCenterContext js_arrow__slidePrew">
+						<div class="arrowForSlider_side flexCenterContext js_arrow__slideNext">
 							<div class="wall_for_arrowForSlider"></div>
 							<svg class="svg_arrow_slider">
 								<use xlink:href="../image/sprite.svg#icon--portf_arrow_up" class="svg_arrow_slider"></use>
 							</svg>
+							<ul class="ul_slideshowSmall js_slideWrap_Small_next">
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно00000" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Итальяно1111" data-workflow="Mysql,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew li_slideSmall_active"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Итальяно2222" data-workflow="JavaScript,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__prew"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Итальяно3333" data-workflow="NodeJS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
+							</ul>
+						</div>
+						<div class="arrowForSlider_side flexCenterContext js_arrow__slidePrew">
+							<div class="wall_for_arrowForSlider"></div>
+							<svg class="svg_arrow_slider">
+								<use xlink:href="../image/sprite.svg#icon--portf_arrow_down" class="svg_arrow_slider"></use>
+							</svg>
+							<ul class="ul_slideshowSmall js_slideWrap_Small_prew">
+								<li class="li_slideSmall li_slideSmall__next li_slideSmall_active"><img src="../image/sliderSite/0.jpg" alt="фото сайта для слайда" data-name="Итальяно0" data-workflow="CSS,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="1" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/1.jpg" alt="фото сайта для слайда" data-name="Миално1" data-workflow="Gulp,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="2" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/2.jpg" alt="фото сайта для слайда" data-name="Сабвей2" data-workflow="Git,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="3" class="arrow__slideImage"></li>
+								<li class="li_slideSmall li_slideSmall__next"><img src="../image/sliderSite/3.jpg" alt="фото сайта для слайда" data-name="Курка3" data-workflow="SmartJs,HTML,PHP" data-link="https://italiano-pizza.ru" data-number="4" class="arrow__slideImage"></li>
+							</ul>
 						</div>
 					</div>
 				</div>

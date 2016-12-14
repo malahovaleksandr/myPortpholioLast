@@ -9,6 +9,10 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
+		<div class="wrapLoader">
+			<div class="blockPercent"></div>
+			<div class="percentCurent">01</div>
+		</div>
 		<div class="wrap_parralax">
 			<div class="parralax_layer parralax_layer1"></div>
 			<div class="parralax_layer parralax_layer2"></div>

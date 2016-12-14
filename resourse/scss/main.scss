@@ -1,11 +1,13 @@
 @import "normalize";
 @import "add/_mixin_variab";
 @import "add/fonts";
+
 @import "about";
 @import "work";
 @import "blog";
 @import "admin";
 @import "footer";
+@import "add/preloader";
 
 html, body {
 	font-size: 16px;
@@ -507,6 +509,10 @@ html, body {
 	fill:rgba(#fff,0.7);
 	&:hover{
 		fill:rgba(#fff,1);
+	}
+	@include breakpoint(tablet){
+		width:25px;
+		height: 25px;
 	}
 	@include breakpoint(phone){
 		width:20px;

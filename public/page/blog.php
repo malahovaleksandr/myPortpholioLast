@@ -11,6 +11,10 @@
 		<link rel="stylesheet" href="../css/main.css">
 	</head>
 	<body>
+		<div class="wrapLoader">
+			<div class="blockPercent"></div>
+			<div class="percentCurent">01</div>
+		</div>
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>

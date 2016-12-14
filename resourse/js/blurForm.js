@@ -8,11 +8,11 @@ $(function(){
               var  widthBackgr=sectionBlur.width(),//ширина секции с бэкграундом
                   posTop=sectionBlur.offset().top-blur.offset().top,//положение от верха
                   posLeft=sectionBlur.offset().left-blur.offset().left; //положение блока от левого края
-                console.log('sec top top- '+sectionBlur.offset().top);
-                console.log('blur top- '+blur.offset().top);
-
-                console.log('top- '+posTop);
-                console.log('left- '+posLeft);
+                // console.log('sec top top- '+sectionBlur.offset().top);
+                // console.log('blur top- '+blur.offset().top);
+                //
+                // console.log('top- '+posTop);
+                // console.log('left- '+posLeft);
                 blur.css({
                     'background-size':widthBackgr+'px'+' '+ 'auto',
                     'background-position': posLeft +'px'+' '+posTop+'px'
