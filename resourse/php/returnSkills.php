@@ -14,15 +14,6 @@ $pdo = new PDO($dsn, $user, $pass,$opt);
 $query='SELECT * FROM skills';
 
 $stmt=$pdo->query($query)->fetchAll();
-echo '<pre>';
-print_r($stmt);
-echo '<pre>';
-//foreach($stmt as $row){
-//    echo '<pre>';
-//    print_r($row['name']);
-//    echo ' ';
-//    print_r($row['procent']);
-//    echo ' ';
-//    print_r($row['circle']);
-//    echo '<pre>';
-//};
+function show($res){
+    echo $res;
+}

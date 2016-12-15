@@ -409,6 +409,7 @@
   transition: 1s;
 }
 .circle_1, .circle_2{
+  transition: 1s;
   r:35px;
   cx:45px;
   cy:45px;
@@ -420,8 +421,10 @@
   stroke-dasharray: 220;
 }
 .circle_2{
+
   stroke:#00bea4;
-  stroke-dasharray: 180;
+  stroke-dasharray: 220;
+  stroke-dashoffset:220;
 }
 
 .HalfWidth__circleTitle{

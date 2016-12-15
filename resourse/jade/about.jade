@@ -1,3 +1,5 @@
+:php
+    require_once "../php/returnSkills.php"
 doctype HTML
 html(lang="ru")
     head
@@ -73,57 +75,57 @@ html(lang="ru")
                     .blockHalfWidth__titleText2.BERNIERRegular.doubleDash ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
                     .blockHalfWidth__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
                     .column.robotoMedium.HalfWidth__circleTitle Frontend
-                    .column.circle__block
+                    .column.circle__block.js_lineCircle1
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="180").circle_2
+                                circle(data-score!=-show($stmt[0]['circle'])).circle_2.cricle_html
                             .circle__text.robotoMedium HTML 5
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="160").circle_2
+                                circle(data-score!=-show($stmt[1]['circle'])).circle_2.cricle_css
                             .circle__text.robotoMedium CSS 3
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="120").circle_2
+                                circle(data-score!=-show($stmt[2]['circle'])).circle_2.cricle_js
                             .circle__text.robotoMedium JS & Jquery
 
 
                     .column.robotoMedium.HalfWidth__circleTitle Backend
-                    .column.circle__block
+                    .column.circle__block.js_lineCircle2
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="180").circle_2
+                                circle(data-score!=-show($stmt[3]['circle'])).circle_2.cricle_php
                             .circle__text.robotoMedium PHP
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="160").circle_2
+                                circle(data-score!=-show($stmt[4]['circle'])).circle_2.cricle_mysql
                             .circle__text.robotoMedium mySQL
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="120").circle_2
+                                circle(data-score!=-show($stmt[5]['circle'])).circle_2.cricle_nodejs
                             .circle__text.robotoMedium NodeJS & npm
                     .column.robotoMedium.HalfWidth__circleTitle Workflow
-                    .column.circle__block
+                    .column.circle__block.js_lineCircle3
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="180").circle_2
+                                circle(data-score!=-show($stmt[7]['circle'])).circle_2.cricle_git
                             .circle__text.robotoMedium GIT
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="160").circle_2
+                                circle(data-score!=-show($stmt[8]['circle'])).circle_2.cricle_gulp
                             .circle__text.robotoMedium GULP
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score="120").circle_2
+                                circle(data-score!=-show($stmt[9]['circle'])).circle_2.cricle_bower
                             .circle__text.robotoMedium Bower
             section.pageAbout__Desctop.pageAbout__Desctop3
                 #js_connectMap.block__map

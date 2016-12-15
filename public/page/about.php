@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php require_once "../php/returnSkills.php"?><!DOCTYPE HTML>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
@@ -90,73 +90,73 @@
 					<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash">ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН</div>
 					<div class="blockHalfWidth__text">Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Frontend</div>
-					<div class="column circle__block">
+					<div class="column circle__block js_lineCircle1">
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="180" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[0]['circle']); ?>" class="circle_2 cricle_html"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">HTML 5</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="160" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[1]['circle']); ?>" class="circle_2 cricle_css"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">CSS 3</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="120" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[2]['circle']); ?>" class="circle_2 cricle_js"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">JS & Jquery</div>
 						</div>
 					</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Backend</div>
-					<div class="column circle__block">
+					<div class="column circle__block js_lineCircle2">
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="180" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[3]['circle']); ?>" class="circle_2 cricle_php"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">PHP</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="160" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[4]['circle']); ?>" class="circle_2 cricle_mysql"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">mySQL</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="120" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[5]['circle']); ?>" class="circle_2 cricle_nodejs"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">NodeJS & npm</div>
 						</div>
 					</div>
 					<div class="column robotoMedium HalfWidth__circleTitle">Workflow</div>
-					<div class="column circle__block">
+					<div class="column circle__block js_lineCircle3">
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="180" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[7]['circle']); ?>" class="circle_2 cricle_git"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">GIT</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="160" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[8]['circle']); ?>" class="circle_2 cricle_gulp"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">GULP</div>
 						</div>
 						<div class="wrap_circle_svg">
 							<svg class="circle__svg">
 								<circle class="circle_1"></circle>
-								<circle data-score="120" class="circle_2"></circle>
+								<circle data-score="<?php show($stmt[9]['circle']); ?>" class="circle_2 cricle_bower"></circle>
 							</svg>
 							<div class="circle__text robotoMedium">Bower</div>
 						</div>
