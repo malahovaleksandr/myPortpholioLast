@@ -87,35 +87,52 @@ html(lang="ru")
                             svg.svg_arrow_slider
                                 use(xlink:href="../image/sprite.svg#icon--portf_arrow_up").svg_arrow_slider
                             ul.ul_slideshowSmall.js_slideWrap_Small_next
-                                li.li_slideSmall.li_slideSmall__prew
-                                    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно00000 сайт",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="1").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__prew
-                                    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Итальяно1111 сайт",data-workflow="Mysql,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="2").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__prew.li_slideSmall_active
-                                    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Итальяно2222 сайт",data-workflow="JavaScript,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="3").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__prew
-                                    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Итальяно3333 сайт",data-workflow="NodeJS,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="4").arrow__slideImage
+                                :php
+                                    foreach($stmt as $key=>$value){
+                                        if($value['id']==3){
+                                        echo "<li class=\"li_slideSmall li_slideSmall__prew li_slideSmall_active\"><img src=".$value['photoSrc']." alt=\"фото сайта для слайда\" data-name=\"".$value['nameSite']."\" data-workflow=\"".$value['workflow']."\" data-link=".$value['link']." data-number=\"1\" class=\"arrow__slideImage\"></li>";
+                                        }else{
+                                            echo "<li class=\"li_slideSmall li_slideSmall__prew\"><img src=".$value['photoSrc']." alt=\"фото сайта для слайда\" data-name=\"".$value['nameSite']."\" data-workflow=\"".$value['workflow']."\" data-link=\"".$value['link']."\" data-number=\"1\" class=\"arrow__slideImage\"></li>";
+                                        }
+
+                                    }
+                                //li.li_slideSmall.li_slideSmall__prew
+                                //    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно00000 сайт",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="1").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__prew
+                                //    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Итальяно1111 сайт",data-workflow="Mysql,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="2").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__prew.li_slideSmall_active
+                                //    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Итальяно2222 сайт",data-workflow="JavaScript,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="3").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__prew
+                                //    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Итальяно3333 сайт",data-workflow="NodeJS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="4").arrow__slideImage
                         .arrowForSlider_side.flexCenterContext.js_arrow__slidePrew.js_arrow__slide
                             .wall_for_arrowForSlider
                             svg.svg_arrow_slider
                                 use(xlink:href="../image/sprite.svg#icon--portf_arrow_down").svg_arrow_slider
                             ul.ul_slideshowSmall.js_slideWrap_Small_prew
-                                li.li_slideSmall.li_slideSmall__next.li_slideSmall_active
-                                    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно0 сайт",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="1").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__next
-                                    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Миално1 сайт",data-workflow="Gulp,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="2").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__next
-                                    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Сабвей2 сайт",data-workflow="Git,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="3").arrow__slideImage
-                                li.li_slideSmall.li_slideSmall__next
-                                    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Курка3 сайт",data-workflow="SmartJs,HTML,PHP",data-link="https://italiano-pizza.ru",
-                                    data-number="4").arrow__slideImage
+                                :php
+                                    foreach($stmt as $key=>$value){
+                                        if($value['id']==1){
+                                            echo "<li class=\"li_slideSmall li_slideSmall__next li_slideSmall_active\"><img src=".$value['photoSrc']." alt=\"фото сайта для слайда\" data-name=\"".$value['nameSite']."\" data-workflow=\"".$value['workflow']."\" data-link=\"".$value['link']."\" data-number=\"1\" class=\"arrow__slideImage\"></li>";
+                                        }else{
+                                            echo "<li class=\"li_slideSmall li_slideSmall__next \"><img src=".$value['photoSrc']." alt=\"фото сайта для слайда\" data-name=\"".$value['nameSite']."\" data-workflow=\"".$value['workflow']."\" data-link=\"".$value['link']."\" data-number=\"1\" class=\"arrow__slideImage\"></li>";
+                                        }
+                                    }
+                                //li.li_slideSmall.li_slideSmall__next.li_slideSmall_active
+                                //    img(src="../image/sliderSite/0.jpg",alt="фото сайта для слайда",data-name="Итальяно0 сайт",data-workflow="CSS,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="1").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__next
+                                //    img(src="../image/sliderSite/1.jpg",alt="фото сайта для слайда",data-name="Миално1 сайт",data-workflow="Gulp,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="2").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__next
+                                //    img(src="../image/sliderSite/2.jpg",alt="фото сайта для слайда",data-name="Сабвей2 сайт",data-workflow="Git,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="3").arrow__slideImage
+                                //li.li_slideSmall.li_slideSmall__next
+                                //    img(src="../image/sliderSite/3.jpg",alt="фото сайта для слайда",data-name="Курка3 сайт",data-workflow="SmartJs,HTML,PHP",data-link="https://italiano-pizza.ru",
+                                //    data-number="4").arrow__slideImage
 
             .wrap__titleName.flexCenterContext.background_white
                 .blockHalfWidth__titleText.BERNIERRegular.doubleDash ЧТО ОБО МНЕ ГОВОРЯТ

@@ -22,4 +22,4 @@ foreach($stmt as $key=>$value){
 function show($res){
     echo $res;
 }
-
+echo $stmt[2]['nameSite'];
