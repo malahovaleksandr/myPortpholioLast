@@ -1,3 +1,5 @@
+:php
+    require_once "../php/returnSliderInfo.php"
 doctype HTML
 html(lang="ru")
     head
@@ -52,18 +54,27 @@ html(lang="ru")
 
                     .wrapSlideshow.flexCenterContext.js_blockSlide
                         ul.ul_slider
-                            li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/0.jpg", name="1").li__slider__image
-                            li.li__slider.flexCenterContext.li__slider_activ
-                                img(src="../image/sliderSite/1.jpg",name="2").li__slider__image
-                            li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/2.jpg",name="3").li__slider__image
-                            li.li__slider.flexCenterContext
-                                img(src="../image/sliderSite/3.jpg",name="4").li__slider__image
+                            :php
+                                foreach($stmt as $key=>$value){
+                                if($value['id']==2){
+                                echo "<li class=\"li__slider flexCenterContext li__slider_activ\"><img src=".$value['photoSrc']." name=\"1\" class=\"li__slider__image\"></li>";
+                                }else{
+                                echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']." name=\"1\" class=\"li__slider__image\"></li>";
+                                }
+
+                                }
+                            //li.li__slider.flexCenterContext
+                            //    img(src="../image/sliderSite/0.jpg", name="1").li__slider__image
+                            //li.li__slider.flexCenterContext.li__slider_activ
+                            //    img(src="../image/sliderSite/1.jpg",name="2").li__slider__image
+                            //li.li__slider.flexCenterContext
+                            //    img(src="../image/sliderSite/2.jpg",name="3").li__slider__image
+                            //li.li__slider.flexCenterContext
+                            //    img(src="../image/sliderSite/3.jpg",name="4").li__slider__image
                     .wrapBlock_60procent.flexCenterContext.flexColumn
-                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100.js_nameSite 11САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО
-                        .line_workflow.robotoMedium.js_workflow HTML, CSS, PHP, GULP
-                        a(href="").buttobLookSite.flexCenterContext.js_linkForSite
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.width100.js_nameSite!=show($stmt[1]['nameSite'])
+                        .line_workflow.robotoMedium.js_workflow!=show($stmt[1]['workflow'])
+                        a(href!=show($stmt[1]['link']), target="_blank").buttobLookSite.flexCenterContext.js_linkForSite
                             svg.svg_link
                                 use(xlink:href="../image/sprite.svg#icon--link").svg_link
                             .buttobLookSite__text.robotoMedium Посмотреть сайт

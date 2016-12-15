@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php require_once "../php/returnSliderInfo.php"?><!DOCTYPE HTML>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
@@ -66,16 +66,29 @@
 			<section class="pageAbout__Desctop gray_desctop adaptiveClass">
 				<div class="blockHalfWidth__adaptive flexCenterContext">
 					<div class="wrapSlideshow flexCenterContext js_blockSlide">
-						<ul class="ul_slider">
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/0.jpg" name="1" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext li__slider_activ"><img src="../image/sliderSite/1.jpg" name="2" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/2.jpg" name="3" class="li__slider__image"></li>
-							<li class="li__slider flexCenterContext"><img src="../image/sliderSite/3.jpg" name="4" class="li__slider__image"></li>
+						<ul class="ul_slider"><?php foreach($stmt as $key=>$value){
+if($value['id']==2){
+echo "<li class=\"li__slider flexCenterContext li__slider_activ\"><img src=".$value['photoSrc']." name=\"1\" class=\"li__slider__image\"></li>";
+}else{
+echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']." name=\"1\" class=\"li__slider__image\"></li>";
+}
+
+}?>
+							<!--li.li__slider.flexCenterContext-->
+							<!--    img(src="../image/sliderSite/0.jpg", name="1").li__slider__image-->
+							<!--li.li__slider.flexCenterContext.li__slider_activ-->
+							<!--    img(src="../image/sliderSite/1.jpg",name="2").li__slider__image-->
+							<!--li.li__slider.flexCenterContext-->
+							<!--    img(src="../image/sliderSite/2.jpg",name="3").li__slider__image-->
+							<!--li.li__slider.flexCenterContext-->
+							<!--    img(src="../image/sliderSite/3.jpg",name="4").li__slider__image-->
 						</ul>
 					</div>
 					<div class="wrapBlock_60procent flexCenterContext flexColumn">
-						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100 js_nameSite">11САЙТ ПИЦЦЕРИИ ИТАЛЬЯНО</div>
-						<div class="line_workflow robotoMedium js_workflow">HTML, CSS, PHP, GULP</div><a href="" class="buttobLookSite flexCenterContext js_linkForSite">
+						<div class="blockHalfWidth__titleText2 BERNIERRegular doubleDash width100 js_nameSite">
+							<?php echo show($stmt[1]['nameSite']); ?></div>
+						<div class="line_workflow robotoMedium js_workflow">
+							<?php echo show($stmt[1]['workflow']); ?></div><a href="<?php echo show($stmt[1]['link']); ?>" target="_blank" class="buttobLookSite flexCenterContext js_linkForSite">
 							<svg class="svg_link">
 								<use xlink:href="../image/sprite.svg#icon--link" class="svg_link"></use>
 							</svg>
