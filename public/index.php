@@ -51,7 +51,7 @@
 						<div class="wellcome_back__title">Авторизуйтесь</div>
 						<form class="blockWellcome__formAuthorithation">
 							<label for="authorName" class="formAuthorithation__label">
-								<input type="name" name="login" placeholder="Логин" id="authorName" class="formAuthorithation__input">
+								<input type="name" name="login" placeholder="Логин" id="authorName" class="formAuthorithation__input js_login">
 								<div class="iconForAuthorithation">
 									<svg class="svgForAuthor">
 										<use xlink:href="image/sprite.svg#icon--login"></use>
@@ -59,7 +59,7 @@
 								</div>
 							</label>
 							<label for="authorPass" class="formAuthorithation__label">
-								<input type="password" name="pass" placeholder="Пароль" id="authorPass" class="formAuthorithation__input">
+								<input type="password" name="pass" placeholder="Пароль" id="authorPass" class="formAuthorithation__input js_password">
 								<div class="iconForAuthorithation">
 									<svg class="svgForAuthor">
 										<use xlink:href="image/sprite.svg#icon--password"></use>
@@ -67,12 +67,12 @@
 								</div>
 							</label>
 							<label for="youRobot" class="formAuthorithation__label checkbox__youRobot">
-								<input type="checkbox" name="robot" id="youRobot" class="formAuthorithation__checkbox">
+								<input type="checkbox" name="robot" id="youRobot" class="formAuthorithation__checkbox js_checkRobot">
 								<div class="imageCheckboxRobot"></div>
 								<div class="formAuthorithation_textRobot">Я человек</div>
 							</label>
 						</form>
-						<div class="wrapper__wellcome_linkToPage"><a href="" class="wellcomeBack_linkToPage js_buttonMainBackRevers">На главную</a><a href="#" class="wellcomeBack_linkToPage">Войти</a></div>
+						<div class="wrapper__wellcome_linkToPage"><a href="" class="wellcomeBack_linkToPage js_buttonMainBackRevers">На главную</a><a href="#" class="wellcomeBack_linkToPage js_enterButton">Войти</a></div>
 					</div>
 				</div>
 			</div>

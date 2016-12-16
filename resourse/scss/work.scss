@@ -304,7 +304,32 @@ justify-content: center;
   height: 42px;
   width: 90%;
   padding: 10px;;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
+  position: relative;
+}
+.validateIcon{
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 16px;
+  height: 16px;
+background-repeat: no-repeat;
+}
+.validName{
+  position: absolute;
+  right: 25px;
+  top: 85px;
+  color:red;
+  font-size:1rem;
+  opacity: 0;
+}
+.validText{
+  position: absolute;
+  right: 25px;
+  top: 295px;
+  color:red;
+  font-size:1rem;
+  opacity: 0;
 }
 .inputTextarea{
   height: 120px;

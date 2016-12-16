@@ -167,11 +167,14 @@ html(lang="ru")
                     .blockSandMail__lineTitle.BERNIERRegular.doubleDash СВЯЗАТЬСЯ СО МНОЙ
                     form(method="POST", action="").form__sandMail.flexColumn.flexStart.robotoRegular
                         input(type="text", name="nameMailer",placeholder="Имя").inputForm.js_inputName
+                        .validName.robotoLight Напишите своё имя
                         input(type="text", name="emailMailer",placeholder="Email").inputForm.js_inputEmail
-                        textarea(rows="10", name="textMailer",placeholder="Ваше сообщение").inputForm.js_inputText.inputTextarea
+                        .validateIcon
+                        textarea(rows="10", name="textMailer",placeholder="Ваше сообщение").inputForm.inputTextarea.js_inputText
+                        .validText.robotoLight Напишите свое сообщение
                         .wrap_form__buttons
-                            .form__button.robotoMedium Отправить
-                            .form__button.robotoMedium Очистить
+                            .form__button.robotoMedium.js_sandMail Отправить
+                            .form__button.robotoMedium.js_clearForm Очистить
                 .wrapper__blockSandMail.absoluteCenter.wrapper__blur
                     .block_blur
 

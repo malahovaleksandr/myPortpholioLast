@@ -192,11 +192,14 @@ echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']."
 					<div class="blockSandMail__lineTitle BERNIERRegular doubleDash">СВЯЗАТЬСЯ СО МНОЙ</div>
 					<form method="POST" action="" class="form__sandMail flexColumn flexStart robotoRegular">
 						<input type="text" name="nameMailer" placeholder="Имя" class="inputForm js_inputName">
+						<div class="validName robotoLight">Напишите своё имя</div>
 						<input type="text" name="emailMailer" placeholder="Email" class="inputForm js_inputEmail">
-						<textarea rows="10" name="textMailer" placeholder="Ваше сообщение" class="inputForm js_inputText inputTextarea"></textarea>
+						<div class="validateIcon"></div>
+						<textarea rows="10" name="textMailer" placeholder="Ваше сообщение" class="inputForm inputTextarea js_inputText"></textarea>
+						<div class="validText robotoLight">Напишите свое сообщение</div>
 						<div class="wrap_form__buttons">
-							<div class="form__button robotoMedium">Отправить</div>
-							<div class="form__button robotoMedium">Очистить</div>
+							<div class="form__button robotoMedium js_sandMail">Отправить</div>
+							<div class="form__button robotoMedium js_clearForm">Очистить</div>
 						</div>
 					</form>
 				</div>

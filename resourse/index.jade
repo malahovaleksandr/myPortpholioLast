@@ -52,24 +52,24 @@ html(lang="ru")
                          .wellcome_back__title Авторизуйтесь
                          form.blockWellcome__formAuthorithation
                              label(for="authorName").formAuthorithation__label
-                                 input(type="name",name="login",placeholder="Логин",id="authorName").formAuthorithation__input
+                                 input(type="name",name="login",placeholder="Логин",id="authorName").formAuthorithation__input.js_login
                                  .iconForAuthorithation
                                          svg.svgForAuthor
                                              use(xlink:href="image/sprite.svg#icon--login")
 
                              label(for="authorPass").formAuthorithation__label
-                                 input(type="password",name="pass",placeholder="Пароль", id="authorPass").formAuthorithation__input
+                                 input(type="password",name="pass",placeholder="Пароль", id="authorPass").formAuthorithation__input.js_password
                                  .iconForAuthorithation
                                         svg.svgForAuthor
                                             use(xlink:href="image/sprite.svg#icon--password")
                              label(for="youRobot").formAuthorithation__label.checkbox__youRobot
-                                 input(type="checkbox",name="robot", id="youRobot").formAuthorithation__checkbox
+                                 input(type="checkbox",name="robot", id="youRobot").formAuthorithation__checkbox.js_checkRobot
                                  .imageCheckboxRobot
                                  .formAuthorithation_textRobot Я человек
 
                             .wrapper__wellcome_linkToPage
                                 a(href="").wellcomeBack_linkToPage.js_buttonMainBackRevers На главную
-                                a(href="#").wellcomeBack_linkToPage Войти
+                                a(href="#").wellcomeBack_linkToPage.js_enterButton Войти
 
 
 

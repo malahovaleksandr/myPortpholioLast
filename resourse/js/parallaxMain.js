@@ -21,7 +21,7 @@ var parralaxLayer=$('.parralax_layer');//слой паралакса
         parralaxLayer.map(function(key, value){
             var moveX=w*((key)/100),
                 moveY=h*((key)/100);
-            console.log(moveX,moveY);
+            //console.log(moveX,moveY);
                 $(value).css({
                 'transform':'translate3d('+moveX+'px,'+moveY+'px,0)',
                  'left':-10*(key)+'px',

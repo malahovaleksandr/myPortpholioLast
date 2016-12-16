@@ -1,5 +1,5 @@
 $(function(){
-    console.log('fixed');
+    //console.log('fixed');
     $(window).on('scroll',function(){
         var wScroll=$(window).scrollTop(),
             menuleft=$('.column__1_blog .js_ul_menu'),
@@ -24,10 +24,10 @@ $(function(){
                if(topEdge<wScroll && bottom>wScroll){
                    var listId=$this.data('section'),
                        blockMenuleft=$('.fixed_menu .column__1_blog');//находим меню слева
-                   console.log(listId);
+                   //console.log(listId);
 
                    blockMenuleft.find('.js_ul_menu').removeClass('.activeStroke_blogThema');
-                   console.log( blockMenuleft.find('.activeStroke_blogThema').length);
+                   //console.log( blockMenuleft.find('.activeStroke_blogThema').length);
                    blockMenuleft.find('[data-id='+listId+']').addClass('.activeStroke_blogThema');
 
                }
