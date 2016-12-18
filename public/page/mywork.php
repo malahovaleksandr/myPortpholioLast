@@ -159,7 +159,7 @@ echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']."
 					<use xlink:href="../image/sprite.svg#icon--about_header" class="svg_work"></use>
 				</svg>
 			</div>
-			<section class="pageMyWork_lastDesktop js_sectionBlur">
+			<section class="pageMyWork_lastDesktop js_sectionWithBlur">
 				<div class="wrapblocFeedBack">
 					<div class="blockFeedback"><img src="../image/kov.png" alt="ковычки" class="image__kovichki">
 						<div class="textFeedback robotoRegular">
@@ -206,6 +206,17 @@ echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']."
 				<div class="wrapper__blockSandMail absoluteCenter wrapper__blur">
 					<div class="block_blur"></div>
 				</div>
+				<!--.backk-->
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				<footer class="footer">
 					<div class="footer_column">
 						<div class="footer_block_forLink"><a href="../page/mywork.php" class="footer__row robotoMedium">Мои работы</a><a href="../page/about.php" class="footer__row robotoMedium">Обо мне</a><a href="../page/blog.php" class="footer__row robotoMedium">Блог</a><a href="../page/authorization.php" class="footer__row robotoMedium">Авторизация</a></div>

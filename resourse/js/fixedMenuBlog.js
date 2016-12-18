@@ -1,5 +1,5 @@
 $(function(){
-    //console.log('fixed');
+
     $(window).on('scroll',function(){
         var wScroll=$(window).scrollTop(),
             menuleft=$('.column__1_blog .js_ul_menu'),
@@ -10,30 +10,28 @@ $(function(){
         if(topStatic<=wScroll){
             if(!fixedMenu.find('.js_ul_menu').length){
                 fixedMenu.append(menuClone);
-                menuStatic.css('opacity',0);
+                menuleft.hide();
             }
         }else{
             fixedMenu.find('.js_ul_menu').remove();
-            menuStatic.css('opacity',1);
+            menuleft.show();
         }
-       function checkSevtion(){
+
+       function checkSection(){
            $('.block__column__2_blog').each(function(){
                var $this=$(this),
                    topEdge=$this.offset().top-200,
                    bottom=topEdge+$this.height();
                if(topEdge<wScroll && bottom>wScroll){
                    var listId=$this.data('section'),
-                       blockMenuleft=$('.fixed_menu .column__1_blog');//находим меню слева
-                   //console.log(listId);
+                       blockMenuleft=$('.fixed_menu .js_ul_menu');//находим меню слева
 
-                   blockMenuleft.find('.js_ul_menu').removeClass('.activeStroke_blogThema');
-                   //console.log( blockMenuleft.find('.activeStroke_blogThema').length);
-                   blockMenuleft.find('[data-id='+listId+']').addClass('.activeStroke_blogThema');
-
+                   blockMenuleft.find('.column__1_blog__line').find('.activeStroke_blogThema').removeClass('activeStroke_blogThema');
+                   blockMenuleft.find('[data-id='+listId+']').find('.js_linkActiv').addClass('activeStroke_blogThema');
                }
            })
        }
-        checkSevtion();
+        checkSection();
     });
 
 

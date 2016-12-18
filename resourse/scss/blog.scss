@@ -105,15 +105,7 @@
     }
   }
 }
-.activeStroke_blogThema{
-  border-right: 2px solid #00bfa5;
-  font-family: "robotoBold";
-  font-weight: bold;
-  color:#00bfa5;
-  @include breakpoint(tablet){
-    color:rgba(#fff,1);
-  }
-}
+
 .column__2_blog{
   width:75%;
   //border: 1px solid red;
@@ -154,4 +146,15 @@
 .column__2__text{
   color:#455a64;
   font-size:1rem;
+}
+
+
+.activeStroke_blogThema{
+  border-right: 2px solid #00bfa5;
+  font-family: "robotoBold";
+  font-weight: bold;
+  color:#00bfa5;
+  @include breakpoint(tablet){
+    color:rgba(#fff,1);
+  }
 }

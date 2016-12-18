@@ -2,21 +2,20 @@ $(function(){
    
     var blur=(function(){
         var blur=$('.block_blur'),
-            sectionBlur=$('.js_sectionBlur');
+            sectionBlur=$('.js_sectionWithBlur');
         return {
             set: function(){
               var  widthBackgr=sectionBlur.width(),//ширина секции с бэкграундом
-                  posTop=sectionBlur.offset().top-blur.offset().top,//положение от верха
-                  posLeft=sectionBlur.offset().left-blur.offset().left; //положение блока от левого края
-                // console.log('sec top top- '+sectionBlur.offset().top);
-                // console.log('blur top- '+blur.offset().top);
-                //
-                // console.log('top- '+posTop);
-                // console.log('left- '+posLeft);
+                  hightBackgr=sectionBlur.height(),//ширина секции с бэкграундом
+                  // posTop=sectionBlur.offset().top-blur.offset().top,//положение от верха
+                  // posLeft=sectionBlur.offset().left-blur.offset().left; //положение блока от левого края
+                    leftBackground=-(sectionBlur.width()-blur.width())/2,//положение от верха
+                    topBackground=-(sectionBlur.height()-blur.height())/2; //положение блока от левого края
                 blur.css({
-                    'background-size':widthBackgr+'px'+' '+ 'auto',
-                    'background-position': posLeft +'px'+' '+posTop+'px'
-                })
+                    'background-size':widthBackgr+'px'+' '+ hightBackgr+'px',
+                    'background-position': leftBackground +'px'+' '+topBackground+'px'
+
+                });
             }
         }
     }());

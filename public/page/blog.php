@@ -64,8 +64,14 @@
 				<aside class="column__1_blog js_static">
 					<div class="invisible_menu"></div>
 					<ul class="ul_column__1_blog js_ul_menu"><?php foreach($stmt as $key=>$value){
-echo "<li data-id=".$value['dataID']." class=\"column__1_blog__line\">
-<a href=#".$value['dataID']." class=\"column__1_blog__line\">".$value['title']."</a></li>";
+    if($value['id']==1){
+    echo "<li data-id=".$value['dataID']." class=\"column__1_blog__line\">
+     <a href=#".$value['dataID']." class=\"column__1_blog__line js_linkActiv activeStroke_blogThema\">".$value['title']."</a></li>";
+    }else{
+    echo "<li data-id=".$value['dataID']." class=\"column__1_blog__line\">
+    <a href=#".$value['dataID']." class=\"column__1_blog__line js_linkActiv\">".$value['title']."</a></li>";
+    }
+
 }?>
 						<!--li(data-id="thema1").column__1_blog__line.activeStroke_blogThema-->
 						<!--    a(href="#thema1").column__1_blog__line Интересное в SASS-->
