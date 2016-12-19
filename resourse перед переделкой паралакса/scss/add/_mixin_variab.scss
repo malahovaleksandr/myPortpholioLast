@@ -1,0 +1,40 @@
+
+@mixin adaptive($minWidth,$maxWidth){
+  @media screen and (min-width: $minWidth) and (max-width:$maxWidth){}
+};
+$width1900:1900px;
+$width1800:1800px;
+$width1600:1600px;
+$width1366:1366px;
+$width1240: 1240px;
+$width1024: 1024px;
+$width768: 768px;
+$width480: 480px;
+
+@mixin breakpoint($media) {
+  @if $media == point1900 {@media only screen and (min-width: 1801px)  { @content; }  }
+  @if $media == point1800 {@media only screen and (min-width: 1601px) and (max-width: 1800px) { @content; }  }
+  @if $media == point1600 {@media only screen and (min-width: 1367px) and (max-width: 1600px) { @content; }  }
+  @if $media == point1366 {@media only screen and (min-width: 1241px) and (max-width: 1366px) { @content; }  }
+  @if $media == point1240 {@media only screen and (min-width: 1025px) and (max-width: 1240px) { @content; }  }
+
+  @else if $media == point1024 {@media only screen and (min-width: 769px) and (max-width: 1024px) { @content; }  }
+  @else if $media == point768 {@media only screen and (min-width: 768px) and (max-width: 1023px) { @content; }  }
+  @if $media == desctop {@media only screen and (min-width: $width1024 + 1) { @content; }}
+  @else if $media == tablet {@media only screen and (min-width: 768px) and (max-width: 1023px ) { @content; }  }
+  @else if $media == phone { @media only screen  and (max-width:  767px) { @content; } }
+
+}
+//exemple
+@include breakpoint(desctop)  {
+  width:39px;
+  height: 39px;
+}
+@include breakpoint(tablet)  {
+  width:28px;
+  height: 28px;
+}
+@include breakpoint(phone)  {
+  width:22px;
+  height: 22px;
+}

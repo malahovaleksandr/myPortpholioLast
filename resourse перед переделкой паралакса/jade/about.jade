@@ -1,0 +1,162 @@
+:php
+    require_once "../php/returnSkills.php"
+doctype HTML
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta( name="description", content="Портфолио веб-разработчика Малахова Александра")
+        meta( name="keywords", content="Сайт, написать сайт, заказать сайт")
+        //link(el="shorcut icon" href="../favicon.ico" type="image/x-icon")
+        //link(rel="icon" href="../favicon.ico" type="image/x-icon")
+        title Портфолио- Обо мне
+        link(rel="stylesheet" href="../css/main.css")
+
+    body
+        .wrapLoader
+            .blockPercent
+            .percentCurent 01
+        .wrapperBlueWall
+            .blueWall__leftSide
+            .blueWall__rightSide
+
+            .blueWall_menuLink
+                a(href="mywork.php").blueWall_link.BERNIERRegular Мои Работы
+                a(href="blog.php").blueWall_link.BERNIERRegular Блог
+                a(href="about.php").blueWall_link.BERNIERRegular.doubleDash Обо мне
+                a(href="authorithation.php").blueWall_link.BERNIERRegular Авторизация
+        main.wrapperAboutPage
+
+            section.pageAbout__Desctop
+                .verticalParrallaxWpap
+                    .vertParralax_layer.parralax_Allimage
+
+                include add/header
+                .imagePortfolio
+                    svg.svg_portfolio
+                        use(xlink:href="../image/sprite.svg#icon--portfolio_header").svg_portfolio
+
+
+                .blockPresent
+                    .blockPresent__photo
+                        img(src="../image/my_photo.jpg", alt="фото автора").img__photoAvtar
+                    .blockPresent__name.robotoMedium Александр Малахов
+                    .blockPresent__text.robotoLight Личный сайт веб-разработчика
+                .triangleDouble
+                    svg(xmlns="http://www.w3.org/2000/svg", viewbox="0 0 1000 85", preserveaspectratio="none", class="svg_triangleDouble")
+                        polygon( points="0,0   0,86   500.8,86   500.8,75.5")
+                        polygon( points="1000,0   1000,86   500,86   500,75.5")
+            section.pageAbout__Desctop.pageAbout__Desctop2
+                .blockHalfWidth__adaptive
+                    .image_text_svg
+                        svg.svg_about
+                            use(xlink:href="../image/sprite.svg#icon--about_header").svg_about
+                    .blockHalfWidth__titleText.BERNIERRegular.doubleDash ОБО МНЕ
+                    .blockPhoto
+                        img(src="../image/my_photo.jpg", alt="фото автора").blockPhoto__image
+                    .blockHalfWidth__titleText2.BERNIERRegular.doubleDash КТО Я
+                    .blockHalfWidth__text.
+                        На этой земле бегаю уже 29 лет.
+                         Чем я только не занимался?! Первый источник доходов
+                         это игра в футбол! Кто то платит чтоб смотреть футбол,
+                          я же получал деньги за то ,что играл! Потом продажа
+                          телефонов (когда еще были черно-белые даже).
+                          Потом занесло на пол года в США красить дома и
+                          есть фастфуд. Следующий шаг в работе - это промышленный
+                          альпинизм!!! Работал долго и интересно на высоте,
+                           где летают только птицы и большинство людей боиться
+                           смотреть вниз. Пришлось сменить эту работу и начал
+                            заниматься шитьем кожаных изделий: ремни, кошельки, сумки и т.д.
+                    .blockHalfWidth__text.
+                            А вот следующая и пока последняя сфера деятельности - это уже веб разработка!И тут я стараюсь развиваться как могу! Этот сайт - моя визитная карточка.
+
+
+                .blockHalfWidth__adaptive
+                    .blockHalfWidth__titleText2.BERNIERRegular.doubleDash ЧЕМ Я МОГУ БЫТЬ ВАМ ПОЛЕЗЕН
+                    .blockHalfWidth__text Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+                    .column.robotoMedium.HalfWidth__circleTitle Frontend
+                    .column.circle__block.js_lineCircle1
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[0]['circle'])).circle_2.cricle_html
+                            .circle__text.robotoMedium HTML 5
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[1]['circle'])).circle_2.cricle_css
+                            .circle__text.robotoMedium CSS 3
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[2]['circle'])).circle_2.cricle_js
+                            .circle__text.robotoMedium JS & Jquery
+
+
+                    .column.robotoMedium.HalfWidth__circleTitle Backend
+                    .column.circle__block.js_lineCircle2
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[3]['circle'])).circle_2.cricle_php
+                            .circle__text.robotoMedium PHP
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[4]['circle'])).circle_2.cricle_mysql
+                            .circle__text.robotoMedium mySQL
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[5]['circle'])).circle_2.cricle_nodejs
+                            .circle__text.robotoMedium NodeJS & npm
+                    .column.robotoMedium.HalfWidth__circleTitle Workflow
+                    .column.circle__block.js_lineCircle3
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[7]['circle'])).circle_2.cricle_git
+                            .circle__text.robotoMedium GIT
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[8]['circle'])).circle_2.cricle_gulp
+                            .circle__text.robotoMedium GULP
+                        .wrap_circle_svg
+                            svg.circle__svg
+                                circle.circle_1
+                                circle(data-score!=-show($stmt[9]['circle'])).circle_2.cricle_bower
+                            .circle__text.robotoMedium Bower
+            section.pageAbout__Desctop.pageAbout__Desctop3
+                #js_connectMap.block__map
+                .block_withInfo
+                        .blockHalfWidth__titleText2.BERNIERRegular.doubleDash.alignCenter  КОНТАКТЫ
+                        .columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--skype").svg_block_withInfo
+                            .rowText.robotoMedium  pro100_boy
+                        a(href="mailto:pro100boy@gmail.com",target="_blank").columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--envelope2").svg_block_withInfo
+                            .rowText.robotoMedium  pro100boy@gmail.com
+
+                        a(href="tel:+380631275355").columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--phone2").svg_block_withInfo
+                            .rowText.robotoMedium  +38(063) 12 75 355
+                        .columnFlex
+                            .rowSvg
+                                svg.svg_block_withInfo.svg_iconSocial
+                                    use(xlink:href="../image/sprite.svg#icon--map_marker").svg_block_withInfo
+                            .rowText.robotoMedium  Украина, г.Киев
+
+
+
+                include add/footer
+        script(src="../js/mainWork.js", type="text/javascript")
+
+
+

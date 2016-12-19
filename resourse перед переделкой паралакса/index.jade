@@ -1,0 +1,80 @@
+doctype HTML
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+        meta( name="description", content="Портфолио веб-разработчика Малахова Александра")
+        meta( name="keywords", content="Сайт, написать сайт, заказать сайт")
+        title Портфолио
+        link(rel="stylesheet" href="css/main.css")
+    body
+        .wrapLoader
+            .blockPercent
+            .percentCurent 01
+        .wrap_parralax
+            .parralax_layer.parralax_layer1
+            .parralax_layer.parralax_layer2
+            .parralax_layer.parralax_layer3
+            .parralax_layer.parralax_layer4
+            .parralax_layer.parralax_layer5
+            .parralax_layer.parralax_layer6
+            .parralax_layer.parralax_layer7
+            .parralax_layer.parralax_layer8
+            .parralax_layer.parralax_layer9
+            .parralax_layer.parralax_layer10
+        .wrapper_index
+            header.header_index
+                .authorithation.js_buttonAuthorithation Авторизация
+            .wrapContentIndex
+                .flipper_wrap
+                    .blockWellcome_front
+                        .wellcome__wrapPhoto
+                            img(src="image/my_photo.jpg",alt=" аватарка").wellcomePhoto
+                        .wellcome__name Александр Малахов
+                        .wellcome__description Личный сайт веб-разработчика
+                        .wellcome__icons
+                            a(href="https://www.facebook.com/sanek.maloff",target="_blank").wellcome__linkForSvg
+                                svg.wellcome__svg
+                                    use(xlink:href="image/sprite.svg#icon--Facebook",target="_blank")
+                            a(href="https://github.com/malahovaleksandr").wellcome__linkForSvg
+                                svg.wellcome__svg
+                                    use(xlink:href="image/sprite.svg#icon--github" )
+                            a(href="https://vk.com/id6734152", target="_blank").wellcome__linkForSvg
+                                svg.wellcome__svg
+                                    use(xlink:href="image/sprite.svg#icon--vk" )
+                        .wrapper__wellcome_linkToPage
+                            a(href="page/mywork.php").wellcome_linkToPage Мои работы
+
+                            a(href="page/about.php").wellcome_linkToPage Обо мне
+
+                            a(href="page/blog.php").wellcome_linkToPage Блог
+                    .blockWellcome_back.display_none
+                         .wellcome_back__title Авторизуйтесь
+                         form.blockWellcome__formAuthorithation
+                             label(for="authorName").formAuthorithation__label
+                                 input(type="name",name="login",placeholder="Логин",id="authorName").formAuthorithation__input.js_login
+                                 .iconForAuthorithation
+                                         svg.svgForAuthor
+                                             use(xlink:href="image/sprite.svg#icon--login")
+
+                             label(for="authorPass").formAuthorithation__label
+                                 input(type="password",name="pass",placeholder="Пароль", id="authorPass").formAuthorithation__input.js_password
+                                 .iconForAuthorithation
+                                        svg.svgForAuthor
+                                            use(xlink:href="image/sprite.svg#icon--password")
+                             label(for="youRobot").formAuthorithation__label.checkbox__youRobot
+                                 input(type="checkbox",name="robot", id="youRobot").formAuthorithation__checkbox.js_checkRobot
+                                 .imageCheckboxRobot
+                                 .formAuthorithation_textRobot Я человек
+
+                            .wrapper__wellcome_linkToPage
+                                a(href="").wellcomeBack_linkToPage.js_buttonMainBackRevers На главную
+                                a(href="#").wellcomeBack_linkToPage.js_enterButton Войти
+
+
+
+
+            footer.footer_index © Александр Малахов | Созданно при помощи LoftSchool | 2016
+            script(src="../js/jquery.js")
+            script(src="../js/main.js")
+

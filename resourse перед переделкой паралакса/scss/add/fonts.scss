@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "robotoMedium";
+  //src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  //src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+  //src: url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+  src: url("../fonts/roboto/Roboto-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "robotoRegular";
+  //src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+  //src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+  //src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+  src: url("../fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "robotoLight";
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  src: url("../fonts/roboto/Roboto-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "robotoBold";
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  src: url("../fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "BERNIERRegular";
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+  //src: url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+  src: url("../fonts/bernier/BERNIERRegular-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.robotoMedium{  font-family: "robotoMedium";}
+.robotoRegular{  font-family: "robotoRegular";}
+.robotoBold{  font-family: "robotoBold";}
+.robotoLight{  font-family: "robotoLight";}
+.BERNIERRegular{  font-family: "BERNIERRegular";}

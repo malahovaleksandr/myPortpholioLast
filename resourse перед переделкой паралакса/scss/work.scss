@@ -1,0 +1,441 @@
+.wrapBlock_60procent{
+  width: 65%;
+  @include breakpoint(tablet){    margin:30px 0 ;}
+  @include breakpoint(phone){    margin:20px 0;}
+}
+.blockHalfWidth__adaptive{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color:#455a64;
+  padding: 20px;
+  padding-bottom:5px;
+  @include breakpoint(tablet){
+    width: 100%;
+    height: auto;
+
+  }
+  @include breakpoint(phone){
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+}
+.wrap__titleName{
+  background: #faf8f0;
+  height: 170px;
+  width: 100%;
+  position: relative;
+  //border:1px solid red;
+}
+.svg_work{
+  width: 100%;
+  z-index: 0;
+  fill:rgba(#6d7070,0.1);
+}
+.line_workflow{
+  animation: bounceIn 1s;
+  -webkit-animation: bounceIn 1s;
+  color:#20b5a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-top:2px solid #20b5a1;
+  border-bottom:2px solid #20b5a1;
+  width: 100%;
+  font-size: 1rem;
+  margin-bottom:40px;
+}
+.buttobLookSite{
+  transition: 1s;
+  background: #20b5a1;
+  width: 200px;
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  color: #fff;
+  &:hover{
+    background: #fff;
+    color: #20b5a1;
+    border: 1px solid #20b5a1;
+  }
+  &:hover .svg_link{
+    fill:#20b5a1;
+  }
+}
+.svg_link{
+  transition: 1s;
+  width: 20px;
+  fill:#fff;
+}
+.buttobLookSite__text{
+  font-size: 1rem;
+  margin-left:10px;
+}
+// НАСТРОЙКА  СЛАЙДЕРА
+.wrapSlideshow{
+  position: absolute;
+  left: 100%;
+  top: 0;
+  width: 100%;
+  height: 70vh;
+ @include breakpoint(tablet){
+   position: relative;
+   height: 400px;
+   left:0;
+ }
+  @include breakpoint(phone){
+    position: relative;
+    height: 250px;
+    left:0;
+  }
+}
+.ul_slider{
+  width: 90%;
+  position: relative;
+  height: 90%  ;
+  overflow: hidden;
+  margin:0 auto;
+}
+.li__slider{
+  //transition: 1s;
+  height: 100%;
+  position: absolute;
+  top:-100%;
+  left: 0;
+  right: 0;
+  transform: translate(0,-50%);
+}
+.li__slider_activ{
+  top: 50%;
+}
+.li__slider_down{
+  top:150%;
+}
+.li__slider__image{
+  max-width: 90%;
+  max-height:100%;
+}
+.arrowForSlider{
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.arrowForSlider_side{
+  width: 48%;
+  height: 100% ;
+  position: relative;
+  cursor: pointer;
+ overflow: hidden;
+  &:hover .svg_arrow_slider{
+    fill:rgba(#fff,1);
+  }
+  &:hover .wall_for_arrowForSlider {
+    background: rgba(#000,0.2);
+  }
+}
+.slide__info{
+  position: absolute;
+  top: 0;
+  left:-100%;
+  opacity:0;
+}
+//.arrow__slideNext{
+//   background: url('../image/sliderSite/slider4.jpg');
+//  background-size: cover;
+//  background-repeat: no-repeat;
+// }
+//.arrow__slidePrew{
+//  background: url('../image/sliderSite/slider2.jpg');
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//}
+.arrow__slideImage{
+  width: auto;
+  height: 100%;
+
+}
+.svg_arrow_slider{
+  width: 40px;
+  fill:rgba(#fff,0.5);
+  z-index: 4;
+}
+.wall_for_arrowForSlider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(#000,0.6);
+  z-index: 2;
+}
+.ul_slideshowSmall{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.li_slideSmall{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+justify-content: center;
+}
+.li_slideSmall__prew{  top:150%;}
+.li_slideSmall__next{  top:-150%;}
+.li_slideSmall_active{  top:0;}
+
+// КОНЕЦ  НАСТРОЙКА  СЛАЙДЕРА
+//НАСТРОЙКА ПОСЛЕДНЕГО ЭКРАНА С ОТПРАВКОЙ ПИСЬМА
+.pageMyWork_lastDesktop{
+  width: 100%;
+  height:100%;
+  //min-height: 100vh;
+  min-height: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  background: url('../image/bg1800.png');
+  //background-position: center;
+  background-size: 100% 100%;
+  @include breakpoint(phone){    padding-bottom:130px;  }
+}
+.wrapblocFeedBack{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(phone){
+    flex-direction: column;
+  }
+
+}
+.blockFeedback{
+  width: 90%;
+  max-width:380px;
+  min-width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.image__kovichki{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;;
+}
+.textFeedback{
+  text-indent:5px;
+  width: 100%;
+  font-size: 1rem;
+  color:#455a64;
+  margin-bottom:15px;
+}
+.avtor__feedback{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+.avtor_imageWrapper{
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+.photo_avtor_feedback{
+  width: 100%;height: auto;
+}
+.avtor__feedback__text{
+  font-size:1rem;
+  color:#20b5a1;
+  margin-left:15px;
+  margin-bottom:5px;
+}
+
+//настройка формы отправки письма
+.wrapper__blockSandMail{
+  width: 100%;
+  max-width:380px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 400px;
+  padding-top:20px;
+  z-index: 2;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  @include breakpoint(phone){
+    position: static;
+    margin-top:20px;
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    background: rgba(#fff,0.5);
+  }
+}
+.blockSandMail__lineTitle{
+  font-size: 2.2rem;
+  color: #455a64;
+}
+.form__sandMail{
+  width: 100%;
+  height: 100%;
+  margin-top:10px;
+}
+.inputForm{
+  border: none;
+  border-radius: 5px;
+  height: 42px;
+  width: 90%;
+  padding: 10px;;
+  margin-bottom: 20px;
+  position: relative;
+}
+.validateIcon{
+  position: absolute;
+  right: 0;
+  top: 150px;
+  width: 16px;
+  height: 16px;
+background-repeat: no-repeat;
+}
+.validName{
+  position: absolute;
+  right: 25px;
+  top: 85px;
+  color:red;
+  font-size:1rem;
+  opacity: 0;
+}
+.validText{
+  position: absolute;
+  right: 25px;
+  top: 295px;
+  color:red;
+  font-size:1rem;
+  opacity: 0;
+}
+.inputTextarea{
+  height: 120px;
+  resize: none;
+}
+.wrap_form__buttons{
+  width: 100%;
+  height: 45px;
+  margin-top:auto;
+  display: flex;
+}
+.form__button{
+  font-size: 1rem;
+  background: #268c8b;
+  cursor: pointer;
+  transition: 1s;
+  width: 50%;
+  color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+    background:#26bbaa;
+  }
+  &:first-child{
+    border-right:2px solid #82cfc9;
+  }
+}
+.wrapper__blur{
+  z-index: 0;
+  @include breakpoint(phone){
+    display: none;
+  }
+}
+.block_blur{
+  filter:blur(5px);
+  width: 100%;
+  height: 100%;
+  background: url('../image/bg1800.png')  no-repeat;
+  background-position: -100px -100px;
+  background-size: cover;
+
+
+}
+.backk{
+  border:1px solid red;
+  width: 500px;
+  height: 400px;
+  background: url('../image/bg1800.png')  no-repeat;
+  background-size: 500px 400px;
+  //background-position: -100px -100px;
+  //background-size: cover;
+}
+//КОНЕЦ   НАСТРОЙКА ПОСЛЕДНЕГО ЭКРАНА С ОТПРАВКОЙ ПИСЬМА
+//АНИМАЦИЯ ТЕКСТА
+.letter-span{
+  display: inline-block;
+  opacity:0;
+}
+.letter-span.active_word{
+  opacity:1;
+  animation: bounceIn 1s;
+  -webkit-animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}

@@ -1,0 +1,23 @@
+mixin htmlMarking(link)
+
+
+        head
+            meta(charset="UTF-8")
+            meta(name="viewport"  content="width=device-width, initial-scale=1.0")
+            meta(name="description", content="loft")
+            link(rel="stylesheet", href="css/main.css", )
+            meta( name="keywords", content="Создание сайтов")
+            meta( name="author", content="Малахов Александр 44")
+            link(el="shorcut icon", href="../favicon.ico", type="image/x-icon")
+            link(rel="icon", href="../favicon.ico", type="image/x-icon")
+            block head
+     p= link
+
+
+
+
+mixin list
+    ul
+        li foo
+        li bar
+        li baz

@@ -1,0 +1,508 @@
+//настройки для появляещегося меню с сылками на другие страницы
+.wrapperBlueWall{
+  width: 100%;
+  height: 100%;
+  min-height: 650px;
+  opacity:1;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  transition: 1s;
+  @include breakpoint(tablet){
+  }
+}
+.wrapperBlueWall_active{
+  position: fixed;
+  opacity: 1;
+  z-index: 4;
+}
+.blueWall__leftSide{
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width:50%;
+  height: 100vh;
+  min-height: 650px;
+  background: rgba(#00bfa5,0.8);
+  z-index: -1;
+  transition: 1s;
+}
+
+.blueWall__rightSide{
+   position: absolute;
+   right: -100%;
+   top: 0;
+   width:50%;
+   height: 100vh;
+  min-height: 650px;
+   background:rgba(#00bfa5,0.8);
+  z-index: -1;
+  transition: 1s;
+ }
+.blueWall_menuLink{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:100%;
+  padding-top: 70px;
+  z-index: 4;
+  top: -100%;
+  position: absolute;
+  transition: 1s;
+  @include breakpoint(phone){
+    justify-content: flex-start;
+  }
+}
+.blueWall_menuLink_active{
+  position: relative;
+  top: 0;
+}
+.blueWall_link{
+  font-size: 3.9rem;
+  color:#fff;
+  margin-bottom:70px;
+  cursor: pointer;
+  opacity: 0.8;
+  @include breakpoint(phone){
+    margin-bottom:30px;
+    font-size: 2.5rem;
+  }
+  &:hover{
+    opacity: 1;
+  }
+}
+.header__blockClose_fixed{
+  position: fixed;
+  right: 0;
+}
+
+/// НАСТРОЙКИ КОНТЕНТА СТРАНИЦЫ ОБО МНЕ
+.wrapperAboutPage{
+  width: 100%;
+  //height: 100%;
+  //border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+  @include breakpoint(tablet){
+    //width: 100vw;
+  }
+}
+  .header__page{
+    position: absolute;
+    //border: 1px solid green;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: flex-start;
+    width: 100%;
+    z-index: 5;
+  }
+    .header__links{
+      display: flex;
+      margin: 15px;
+      & .wellcome__svg{
+        fill:#fff;
+        opacity: 0.7;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+    .header__blockClose{
+      margin:15px;
+      margin-left:auto;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 7;
+
+      &:hover .blockClose_line,&:hover .blockClose_line:after,&:hover .blockClose_line:before{
+        background: rgba(#fff,1);
+      }
+    }
+    .blockClose_line{
+      width: 100%;
+      height: 5px;
+      background: rgba(#fff,0.5);
+      right:20px;
+      top: 20px;
+      border-radius: 3px;
+      transition: 0.8s;
+
+      &:before, &:after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background: rgba(#fff,0.5);
+        transform-origin: center center;
+        border-radius: 3px;
+      }
+      &:before{
+        top: 0;
+        transition: 0.4s;
+      }
+      &:after{
+        top: 30px;
+        transition: 1.2s;
+      }
+    }
+.blockClose_line_active.blockClose_line{
+ height: 0;
+}
+.blockClose_line_active{
+  &:before{
+    transform:translateY(-50%) rotate(-45deg);
+    top:50%;
+    background: rgba(#fff,1);
+    opacity: 1;
+  }
+  &:after{
+    transform:translateY(-50%) rotate(45deg);
+    top:50%;
+    opacity:1;
+    background: rgba(#fff,1);
+  }
+}
+
+
+//настройки для паралакса вертикального------------------------------
+.verticalParrallaxWpap{
+  width: 100%;
+  height: 125%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.vertParralax_layer{
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  top: 0;
+  //bottom: 0;
+  left: 0;
+  //right: 0;
+  background:url("../image/pageHeaderBackground2000-min.png" ) 100% 100% no-repeat;
+  @include breakpoint(point1800){background:url("../image/pageHeaderBackground1800-min.png") 100% 100% no-repeat;}
+  @include breakpoint(point1600){background:url("../image/pageHeaderBackground1620-min.png") 100% 100% no-repeat;}
+  @include breakpoint(point1366){background:url("../image/pageHeaderBackground1366-min.png") 100% 100% no-repeat;}
+  @include breakpoint(point1240){background:url("../image/pageHeaderBackground1240-min.png") 100% 100% no-repeat;}
+  @include breakpoint(point1024){background:url("../image/pageHeaderBackground1024-min.png") 100% 100% no-repeat;}
+  @include breakpoint(tablet){background:url("../image/pageHeaderBackground768-min.png") 100% 100% no-repeat;}
+  @include breakpoint(phone){background:url("../image/pageHeaderBackground600-min.png") 100% 100% no-repeat;}
+}
+.parralax_Allimage{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
+//конец настройки для паралакса вертикального------------------------------
+// НАСТРОЙКА ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.pageAbout__Desctop{
+  width: 100%;
+  height:100vh;
+  min-height: 650px;
+  //border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @include breakpoint(tablet){    height:100%;  }
+  @include breakpoint(phone){    height:100%;  }
+
+}
+  .imagePortfolio{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(0,-50%);
+    width:100%;
+    height: 100%;
+
+    z-index: 1;
+    .svg_portfolio{
+      //border: 1px solid yellow;
+      fill:rgba(#fff,0.1);
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .blockPresent{
+    width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+    z-index: 2;
+  }
+    .blockPresent__photo{
+      overflow: hidden;
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+    }
+      .img__photoAvtar{
+        width: 100%;
+        height: 100%;
+      }
+    .blockPresent__name{
+      font-size: 2.2rem;
+    line-height: 1.4;
+    }
+    .blockPresent__text{
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+    .triangleDouble{
+     position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 120px;
+      fill:#efeee9;
+
+      .svg_triangleDouble{
+        width: 100%;
+        height: 120px;
+      }
+    }
+
+// КОНЕЦ НАСТРОЙКИ ПЕРВОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+// НАСТРОЙКА ВТОРОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.pageAbout__Desctop2{
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #efeee9;
+  @include breakpoint(tablet){
+    flex-direction: column;
+    align-items: center;
+  }
+  @include breakpoint(phone){
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  .blockHalfWidth{
+    height: 100%;
+    width: 50%;
+   // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    color:#455a64;
+    padding: 10px;
+  }
+    .image_text_svg{
+      position: absolute;
+      height: 130px;
+      top: 0;
+      left: 50%;
+      width: 80%;
+      transform: translate(-50%,-50%);
+    }
+    .svg_about{
+      fill:rgba(#6d7070,0.1);
+      height: 100%;
+      width: 100%;
+    }
+    .blockHalfWidth__titleText{
+      font-size:3.9rem;
+      line-height: 1.2;
+      color:#373e42;
+      @include breakpoint(tablet){font-size:3.2rem;}
+      @include breakpoint(phone){font-size:2.2rem;}
+    }
+    .blockHalfWidth__titleText2{
+      animation: bounceIn 1s;
+      -webkit-animation: bounceIn 1s;
+      transition: 1s;
+      font-size:2.15rem;
+      width: 55%;
+      display: flex;
+      text-align: center;
+      justify-content:center;
+      align-items: center;
+      line-height: 1.2;
+      color:#373e42;
+      margin-top:15px;
+      margin-bottom:15px;
+      @include breakpoint(tablet){
+        font-size:2rem;
+        width: 90%;}
+      @include breakpoint(phone){
+        font-size:2rem;
+        width: 95%;
+      }
+    }
+    .blockPhoto{
+      max-width: 75%;
+      //display: flex;
+      //align-items: flex-start;
+      //justify-content: center;
+      //margin-bottom:25px;
+    }
+    .blockPhoto__image{
+      max-width: 100%;
+      height: auto;
+
+    }
+    .blockHalfWidth__text{
+      width: 100%;
+      display: flex;
+      justify-content:flex-start;
+      align-items: flex-start;
+      font-size: 1rem;
+      line-height: 1.2;
+      margin-bottom:15px;
+      text-indent: 1rem;
+    }
+.column{  width: 100%;}
+
+.circle__block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  margin:15px 0;
+}
+
+//настройка кругов svg
+
+.wrap_circle_svg{
+  position: relative;
+  height: 100%;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  @include breakpoint(phone){
+    margin-right: 5px;
+  }
+}
+.circle__svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+  height: 90px;
+  fill:none;
+  stroke-width: 20px;
+  transition: 1s;
+}
+.circle_1, .circle_2{
+  transition: 1s;
+  r:35px;
+  cx:45px;
+  cy:45px;
+  transform-origin: center ;
+  transform: rotate(-90deg);
+}
+.circle_1{
+  stroke:#deddd6;
+  stroke-dasharray: 220;
+}
+.circle_2{
+
+  stroke:#00bea4;
+  stroke-dasharray: 220;
+  stroke-dashoffset:220;
+}
+
+.HalfWidth__circleTitle{
+  font-size:1.75rem ;
+  line-height: 1.1;
+}
+.circle__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  color:#00bea4;
+  width:45px;
+}
+
+// КОНЕЦ НАСТРОЙКА ВТОРОГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+//  НАСТРОЙКА ТРЕТЬЕГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
+.block__map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border:1px solid blue;
+  z-index: 0;
+  background: rgba(blue,0.3);
+ // margin-bottom: 110px;
+}
+.block_withInfo{
+  z-index: 3;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50% );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 33%;
+  min-width: 300px;
+  max-width: 380px;
+  background: rgba(#fff,0.7);
+  //border: 1px solid red;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top:5px;
+}
+.columnFlex{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  margin-bottom:6px;
+  &:hover .svg_block_withInfo{
+    fill:rgba(#00bea4,1);
+  }
+}
+.rowSvg{
+  width: 40px;
+  margin-left:40px;
+}
+.rowText{
+  display: flex;
+  align-items: center;
+  color:rgba(#455a64,0.8);
+  font-size: 1rem;
+    &:hover{
+      color:rgba(#000,1);
+    }
+
+}
+.svg_block_withInfo{
+  height: 100%;
+  width: 100%;
+  fill:rgba(#00bea4,0.8);
+}
+.svg_iconSocial{  width:25px;}
+
+// КОНЕЦ НАСТРОЙКА ТРЕТЬЕГО ЭКРАНА СТРАНИЦЫ ОБО МНЕ
