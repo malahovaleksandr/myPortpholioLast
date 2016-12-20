@@ -135,7 +135,7 @@ gulp.task('watch', function () {
     gulp.watch($.config.paths.js.srcWatch, ['js_process','js_processWork']).on('change', browserSync.reload);
     gulp.watch($.config.paths.php.src, ['PHPFiles']).on('change', browserSync.reload);//проверка изменений php файлов
     gulp.watch($.config.paths.font.src, ['Fonts']).on('change', browserSync.reload);
-    gulp.watch($.config.paths.image.src, ['image']).on('change', browserSync.reload);
+    //gulp.watch($.config.paths.image.src, ['image']).on('change', browserSync.reload);
     gulp.watch($.config.paths.image.srcParralax, ['imageParralax']).on('change', browserSync.reload);
 });
 ///подключаем Server

@@ -1,0 +1,217 @@
+.wrapper_adminka{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header_adminka{
+  height: 80px;
+  background: #00bfa5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color:#fff;
+  padding:0 30px;
+}
+.header_adminka__title{
+  font-size:1.75rem;
+}
+.header_adminka__link{
+  font-size:1rem;
+  opacity: 0.7;
+  cursor: pointer;
+  color:#fff;
+  margin-left:auto;
+  &:hover{
+    opacity: 1;
+  }
+}
+.main_adminka{
+  width: 100%;
+  flex:1 0 auto;
+  background: rgba(#fff,0.6);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.main_adminka_background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../image/adminBack1200.png") no-repeat;
+  background-size:cover;
+  z-index: -1;
+}
+.main_adminka_tabs_nav{
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  background: #d6d5cf;
+}
+.title__tabs{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color:#455a64;
+  width: 180px;
+  border-right: 2px solid #fff;
+}
+.activeTabs{
+  background: #fff;
+  color: #00bfa5;
+}
+.main_adminka_tab{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  left:-100%;
+}
+.main_tabActive{
+  position: static;
+  left: 0;
+}
+.tab__title{
+  font-size:1.3rem;
+  color:#455a64;
+  margin-bottom:40px;
+}
+.wrapper_for_tabs{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+// настройки первого таба
+.adminka_blockSkill{
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 260px;
+  color:#455a64;
+}
+.blockSkill__title{
+  font-size: 1rem;
+  margin-bottom:25px;
+  color:#455a64;
+}
+.blockSkill_line{
+  //align-self: center;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size:1rem;
+  height: 30px;
+  margin-bottom:10px;
+}
+.blockSkill_row{
+  margin-left:10px;
+}
+.blockSkill_input{
+  width: 45px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 3px;
+  border: none;
+  margin-left:auto;
+}
+.buttonSave{
+  width: 110px;
+  height: 36px;
+  padding-bottom:1px;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#fff;
+  background: #00bfa5;
+  border-radius: 4px;
+  transition: 1s;
+  cursor: pointer;
+  &:hover{
+    color:#00bfa5;
+    background: #fff;
+  }
+}
+//.js_main_adminka_tab1{
+//  position: absolute;
+//  left:-100%;
+//}
+//конец настройки первого таба
+//настройка вторго таба
+.wrapper_inputBlog_tabs{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.input_blog_admin{
+  width: 300px;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding-left:20px;
+  color:#373e42;
+  margin-bottom: 20px;;
+}
+.input_blogTextarea{
+  width: 500px;
+  resize: none;
+  height: 150px;
+}
+//.js_main_adminka_tab2{
+//  position: absolute;
+//  left:-100%;
+//}
+//конец настройка вторго таба
+
+// настройка третьего таба
+.addImage_forSite{
+  display: none;
+}
+.iconAddImage{
+  width: 37px;
+  height: 37px;
+  background: url("../image/addImage.png");
+  background-repeat: no-repeat;
+  margin-bottom: 20px;;
+  cursor: pointer;
+  opacity: 0.8;
+  &:hover{
+    opacity:1;
+  }
+}
+.iconAddImage{
+  width: 100%;
+  align-items: center;
+}
+.textAddImage{
+color:#00bfa5;
+  font-size: 1rem;
+}
+//конец настройка третьего таба
+//настройка сообщения при сохранении данных
+.massegeSand{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 200px;
+  height: 60px;
+  background: rgba(#fff,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #455a64;
+  border-radius: 5px;
+  color:#455a64;
+  left: -100%;
+}

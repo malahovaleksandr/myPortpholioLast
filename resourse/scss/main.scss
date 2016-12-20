@@ -7,6 +7,7 @@
 @import "blog";
 @import "admin";
 @import "footer";
+@import "authorization";
 @import "add/preloader";
 
 html, body {
@@ -39,8 +40,8 @@ html, body {
 }
 	.parralax_layer{
 		position: absolute;
-		width: 112%;
-		height: 104%;
+		min-width: 112%;
+		min-height: 104%;
 		top: 0;
 		left:0;
 		right: 0;

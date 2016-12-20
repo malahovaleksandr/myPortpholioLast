@@ -13,7 +13,7 @@ var parralaxLayer=$('.parralax_layer');//слой паралакса
                 backgroundPosition: 'center',
                 backgroundSize: 'cover'
             })
-        });
+        }); 
     });
     $(window).on('mousemove',function(e){
         var w=(window.innerWidth/2)-e.pageX,
