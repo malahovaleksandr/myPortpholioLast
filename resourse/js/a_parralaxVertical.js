@@ -1,5 +1,5 @@
 $(function(){
-   //console.log('parralax на страницах');
+    console.log('vert parraaa');
 //ФУНКЦИЯ ПАРАЛАКСА ДЛЯ ТЕКСТА ,ФОТО И ГОР ВЕРТИКАЛЬНО
     var parralaxVertical= (function(){
         var wordBig=$('.svg_portfolio'),//большая налпись которую будем двигать
@@ -22,8 +22,9 @@ $(function(){
         }
     }());
    $(window).scroll(function(){
-       var wScroll=$(window).scrollTop();
-       parralaxVertical.init(wScroll);
+       console.log('parr');
+       var winScroll=$(window).scrollTop();
+       parralaxVertical.init(winScroll);
    })
 
 

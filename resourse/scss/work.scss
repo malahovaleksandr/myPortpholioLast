@@ -1,7 +1,10 @@
 .wrapBlock_60procent{
   width: 65%;
   @include breakpoint(tablet){    margin:30px 0 ;}
-  @include breakpoint(phone){    margin:20px 0;}
+  @include breakpoint(phone){    margin:20px 0;width: 90%;}
+}
+.gradient_gray_lightBlue{
+  background: linear-gradient(to right, #fff, #a6f4ec);
 }
 .blockHalfWidth__adaptive{
   height: 100%;
@@ -25,6 +28,9 @@
     padding: 10px;
   }
 }
+//.rightColumn{
+//  background: #d6f5f9;
+//}
 .wrap__titleName{
   background: #faf8f0;
   height: 170px;
@@ -50,6 +56,7 @@
   width: 100%;
   font-size: 1rem;
   margin-bottom:40px;
+  text-align: center;
 }
 .buttobLookSite{
   transition: 1s;
@@ -84,6 +91,7 @@
   top: 0;
   width: 100%;
   height: 70vh;
+  z-index: 3;
  @include breakpoint(tablet){
    position: relative;
    height: 400px;
@@ -282,6 +290,7 @@ justify-content: center;
   transform: translate(-50%,-50%);
   @include breakpoint(phone){
     position: static;
+    width: 95%;
     margin-top:20px;
     top: 0;
     left: 0;

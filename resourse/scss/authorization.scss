@@ -202,7 +202,7 @@ color:#00bfa5;
 .massegeSand{
   position: absolute;
   top: 50%;
-  left: 50%;
+  //left: 50%;
   transform: translate(-50%,-50%);
   width: 200px;
   height: 60px;
@@ -213,5 +213,6 @@ color:#00bfa5;
   border: 1px solid #455a64;
   border-radius: 5px;
   color:#455a64;
+  opacity: 0;
   left: -100%;
 }

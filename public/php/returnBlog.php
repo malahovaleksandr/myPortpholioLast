@@ -1,10 +1,15 @@
 <?php
 
 include_once "config.php";
+$host=DB;
+//настройки для локального сервера
 $user=DBLoginLocal;
 $pass=DBPassLocal;
-$host=DB;
 $DBname=DBlocal;
+//настройки для внешнего сервера
+//$user=DBLogin;
+//$pass=DBPass;
+//$DBname=DBhosting;
 
 $dsn='mysql:host='.$host.';dbname='.$DBname.';charset=utf8';
 $opt = array(

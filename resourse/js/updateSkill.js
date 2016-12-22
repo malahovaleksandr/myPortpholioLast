@@ -14,18 +14,18 @@ $(function(){
         bower=$('.cricle_bower');
 
     $(document).on('scroll',function(){
-       var wScroll=$(window).scrollTop();//высота прокрутки
-        if(wScroll>=circleBlock1){
+       var windowScroll=$(window).scrollTop();//высота прокрутки
+        if(windowScroll>=circleBlock1){
             html.css('stroke-dashoffset',html.data('score'));
             css.css('stroke-dashoffset',css.data('score'));
             ls.css('stroke-dashoffset',ls.data('score'));
         }
-        if(wScroll>=circleBlock2){
+        if(windowScroll>=circleBlock2){
             php.css('stroke-dashoffset',php.data('score'));
             mysql.css('stroke-dashoffset',mysql.data('score'));
             nodejs.css('stroke-dashoffset',nodejs.data('score'));
         }
-        if(wScroll>=circleBlock3){
+        if(windowScroll>=circleBlock3){
             git.css('stroke-dashoffset',git.data('score'));
             gulp.css('stroke-dashoffset',gulp.data('score'));
             bower.css('stroke-dashoffset',bower.data('score'));

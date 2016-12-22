@@ -1,3 +1,9 @@
+:php
+    session_start();
+    if(!$_SESSION['admin']==1){
+        header("Location: ../index.php");
+        exit;
+    }
 doctype HTML
 html(lang="ru")
     head
@@ -18,9 +24,9 @@ html(lang="ru")
             main.main_adminka
                 .main_adminka_background
                 nav.main_adminka_tabs_nav
-                    .title__tabs(data-tab="js_main_adminka_tab1").robotoMedium.activeTabs TAB 1
-                    .title__tabs(data-tab="js_main_adminka_tab2").robotoMedium TAB 2
-                    .title__tabs(data-tab="js_main_adminka_tab3").robotoMedium TAB 3
+                    .title__tabs(data-tab="js_main_adminka_tab1").robotoMedium.activeTabs Skills
+                    .title__tabs(data-tab="js_main_adminka_tab2").robotoMedium Blog
+                    .title__tabs(data-tab="js_main_adminka_tab3").robotoMedium Info Site
 
                 .main_adminka_tab.js_main_adminka_tab1.main_tabActive
                     .tab__title.robotoMedium Страница "Обо мне"
@@ -36,7 +42,7 @@ html(lang="ru")
                                 input(type="text", name="css_score").blockSkill_input.input_css
                                 .blockSkill_row %
                             .blockSkill_line.robotoRegular
-                                .blockSkill_row JavaScript
+                                .blockSkill_row JS&Jquery
                                 input(type="text", name="js_score").blockSkill_input.input_js
                                 .blockSkill_row %
                         .adminka_blockSkill
@@ -74,6 +80,7 @@ html(lang="ru")
                         .blockSkill__title.robotoMedium Добавить запись
                         input(type="text", name="nameArticle",placeholder="Название").input_blog_admin.js_NameArticle
                         input(type="text", name="dateArticle",placeholder="Дата").input_blog_admin.js_dataArticle
+                        input(type="text", name="idArticle",placeholder="ID статьи").input_blog_admin.js_idArticle
                         textarea(rows="10", name="textArticle",placeholder="Ваше сообщение").inputForm.input_blogTextarea.js_textArticle
 
                     .buttonSave.robotoMedium.js_buttonSaveTab2 Сохранить
@@ -81,10 +88,11 @@ html(lang="ru")
                     .tab__title.robotoMedium Страница "Мои работы"
                     .wrapper_inputBlog_tabs
                         .blockSkill__title.robotoMedium Добавить работу
-                        input(type="text", name="nameArticle",placeholder="Название работы").input_blog_admin.js_NameSite
-                        input(type="text", name="dateArticle",placeholder="Технологии").input_blog_admin.js_workflowSite
+                        input(type="text", name="nameSite",placeholder="Название работы").input_blog_admin.js_NameSite
+                        input(type="text", name="siteWorkflow",placeholder="Технологии").input_blog_admin.js_workflowSite
+                        input(type="text", name="siteLink",placeholder="ссылка на сайт").input_blog_admin.js_linkSite
                         label
-                            input(type="file",name="imageSite").addImage_forSite.js_addImage_forSite
+                            input(type="file",name="imageSite" ).addImage_forSite.js_addImage_forSite
                             .iconAddImage.flexRow
                                 img(src="../image/addImage.png",alt="добавить фото").imageAddImage
                                 .textAddImage.robotoRegular Загрузить картинку
@@ -92,7 +100,7 @@ html(lang="ru")
 
 
 
-                    .buttonSave.robotoMedium.js_buttonSaveTab2 Сохранить
+                    button(type="submit").buttonSave.robotoMedium.js_buttonSaveTab3 Сохранить
                 .massegeSand.robotoBold.js_massegeSave Данные сохранились
 
 

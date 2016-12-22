@@ -34,7 +34,8 @@ $(function(){
     }
     function countPercent(total,current){
         var percent=Math.ceil((current/total)*100);
-        if( percent>=0) $('.wrapLoader').fadeOut();
+
         $('.percentCurent').text(percent+' %');
+        if( percent>=0) setTimeout(function(){$('.wrapLoader').fadeOut()},1000);
     }
 });

@@ -8,5 +8,10 @@ define ('DB','localhost');
 define('DBlocal','portfolio');
 define('DBLoginLocal','root');
 define('DBPassLocal','');
+//настройки для внешнего сервер
+define('DBhosting','u879712820_order');
+define('DBLogin','u879712820_chik');
+define('DBPass','111111');
+
 
 ?>

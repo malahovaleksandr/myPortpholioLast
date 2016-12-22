@@ -1,4 +1,8 @@
-<!DOCTYPE HTML>
+<?php session_start();
+if(!$_SESSION['admin']==1){
+    header("Location: ../index.php");
+    exit;
+}?><!DOCTYPE HTML>
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
@@ -18,9 +22,9 @@
 			<main class="main_adminka">
 				<div class="main_adminka_background"></div>
 				<nav class="main_adminka_tabs_nav">
-					<div data-tab="js_main_adminka_tab1" class="title__tabs robotoMedium activeTabs">TAB 1</div>
-					<div data-tab="js_main_adminka_tab2" class="title__tabs robotoMedium">TAB 2</div>
-					<div data-tab="js_main_adminka_tab3" class="title__tabs robotoMedium">TAB 3</div>
+					<div data-tab="js_main_adminka_tab1" class="title__tabs robotoMedium activeTabs">Skills</div>
+					<div data-tab="js_main_adminka_tab2" class="title__tabs robotoMedium">Blog</div>
+					<div data-tab="js_main_adminka_tab3" class="title__tabs robotoMedium">Info Site</div>
 				</nav>
 				<div class="main_adminka_tab js_main_adminka_tab1 main_tabActive">
 					<div class="tab__title robotoMedium">Страница "Обо мне"</div>
@@ -38,7 +42,7 @@
 								<div class="blockSkill_row">%</div>
 							</div>
 							<div class="blockSkill_line robotoRegular">
-								<div class="blockSkill_row">JavaScript</div>
+								<div class="blockSkill_row">JS&Jquery</div>
 								<input type="text" name="js_score" class="blockSkill_input input_js">
 								<div class="blockSkill_row">%</div>
 							</div>
@@ -88,6 +92,7 @@
 						<div class="blockSkill__title robotoMedium">Добавить запись</div>
 						<input type="text" name="nameArticle" placeholder="Название" class="input_blog_admin js_NameArticle">
 						<input type="text" name="dateArticle" placeholder="Дата" class="input_blog_admin js_dataArticle">
+						<input type="text" name="idArticle" placeholder="ID статьи" class="input_blog_admin js_idArticle">
 						<textarea rows="10" name="textArticle" placeholder="Ваше сообщение" class="inputForm input_blogTextarea js_textArticle"></textarea>
 					</div>
 					<div class="buttonSave robotoMedium js_buttonSaveTab2">Сохранить</div>
@@ -96,8 +101,9 @@
 					<div class="tab__title robotoMedium">Страница "Мои работы"</div>
 					<div class="wrapper_inputBlog_tabs">
 						<div class="blockSkill__title robotoMedium">Добавить работу</div>
-						<input type="text" name="nameArticle" placeholder="Название работы" class="input_blog_admin js_NameSite">
-						<input type="text" name="dateArticle" placeholder="Технологии" class="input_blog_admin js_workflowSite">
+						<input type="text" name="nameSite" placeholder="Название работы" class="input_blog_admin js_NameSite">
+						<input type="text" name="siteWorkflow" placeholder="Технологии" class="input_blog_admin js_workflowSite">
+						<input type="text" name="siteLink" placeholder="ссылка на сайт" class="input_blog_admin js_linkSite">
 						<label>
 							<input type="file" name="imageSite" class="addImage_forSite js_addImage_forSite">
 							<div class="iconAddImage flexRow"><img src="../image/addImage.png" alt="добавить фото" class="imageAddImage">
@@ -105,7 +111,7 @@
 							</div>
 						</label>
 					</div>
-					<div class="buttonSave robotoMedium js_buttonSaveTab2">Сохранить</div>
+					<button type="submit" class="buttonSave robotoMedium js_buttonSaveTab3">Сохранить</button>
 				</div>
 				<div class="massegeSand robotoBold js_massegeSave">Данные сохранились</div>
 			</main>

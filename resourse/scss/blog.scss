@@ -21,6 +21,8 @@
   @include breakpoint(tablet) {
     position: absolute;
     width: 50px;
+    height: 40%;
+
     max-height: 50px;
     border-radius: 25px;
     overflow: hidden;
@@ -67,6 +69,7 @@
   position: absolute;
   top: 0;
   right: 0;
+
 }
 .fixed_menu{
   position: fixed;
@@ -76,7 +79,12 @@
   height: 1px;
   top: 0;
   left: 0;
-
+  @include breakpoint(tablet){
+    display: none;
+  }
+  @include breakpoint(phone){
+    display: none;
+  }
 }
 .column__1_blog__line{
   width: 100%;
@@ -93,6 +101,7 @@
   @include breakpoint(tablet){
     opacity: 0;
     color:rgba(#fff,0.7);
+    //background: #00bfa5;
     &:hover{
       color:rgba(#fff,1);
     }
@@ -100,6 +109,7 @@
   @include breakpoint(phone){
     opacity: 0;
     color:rgba(#fff,0.7);
+    //background: #00bfa5;
     &:hover{
       color:rgba(#fff,1);
     }

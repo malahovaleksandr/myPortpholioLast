@@ -1,5 +1,4 @@
 <?php
-session_start();
 include_once "config.php";
 $host=DB;
 //настройки для локального сервера
@@ -18,19 +17,13 @@ $opt = array(
 );
 $pdo = new PDO($dsn, $user, $pass,$opt);
 
-$login=$_POST['login'];
-$password=$_POST['password'];
-//
-//$login='admin';
-//$password='pro100boy';
+$stmt = $pdo->prepare ("INSERT INTO site (nameSite,workflow,link, photoSrc) VALUES (:nameSite, :workflow, :link,:photoSrc)");
+$stmt -> bindParam(':nameSite', $_POST['nameSite']);
+$stmt -> bindParam(':workflow', $_POST['workflow']);
+$stmt -> bindParam(':link', $_POST['linkSite']);
+$stmt -> bindParam(':photoSrc', $_POST['textArcticle']);
+$stmt -> execute();
+echo 'ok'.$_POST['textArcticle'];
 
-$query='SELECT * FROM user WHERE login= :login and password= :password';
-$stmt=$pdo->prepare($query);
-$stmt->bindParam(':login', $login, PDO::PARAM_STR);
-$stmt->bindParam(':password', $password, PDO::PARAM_STR);
-$stmt->execute();
-$res=$stmt->fetchAll();
-if($res){
-    echo 'location';
-    $_SESSION['admin']=1;
-}else{echo 'false';}
+
+

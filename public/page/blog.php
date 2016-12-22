@@ -18,7 +18,7 @@
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>
-			<div class="blueWall_menuLink"><a href="mywork.php" class="blueWall_link BERNIERRegular">Мои Работы</a><a href="blog.php" class="blueWall_link BERNIERRegular doubleDash">Блог</a><a href="about.php" class="blueWall_link BERNIERRegular">Обо мне</a><a href="authorithation.php" class="blueWall_link BERNIERRegular">Авторизация</a></div>
+			<div class="blueWall_menuLink"><a href="mywork.php" class="blueWall_link BERNIERRegular">Мои Работы</a><a href="blog.php" class="blueWall_link BERNIERRegular doubleDash">Блог</a><a href="about.php" class="blueWall_link BERNIERRegular">Обо мне</a><a href="authorization.php" class="blueWall_link BERNIERRegular">Авторизация</a></div>
 		</div>
 		<main class="wrapperAboutPage">
 			<section class="pageAbout__Desctop">
@@ -144,7 +144,7 @@
 				</footer>
 				<!--script(src="https://code.jquery.com/jquery-2.2.4.js",integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=",crossorigin="anonymous")-->
 				<script src="../js/jquery.js" type="text/javascript"></script>
-				<script src="../js/main.js" type="text/javascript"></script>
+				<script src="../js/main-min.js" type="text/javascript"></script>
 				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDPS7Xoznf9yJs6khW0ODkFuRGMKznCpI0"></script>
 			</section>
 		</main>

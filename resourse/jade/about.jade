@@ -24,7 +24,7 @@ html(lang="ru")
                 a(href="mywork.php").blueWall_link.BERNIERRegular Мои Работы
                 a(href="blog.php").blueWall_link.BERNIERRegular Блог
                 a(href="about.php").blueWall_link.BERNIERRegular.doubleDash Обо мне
-                a(href="authorithation.php").blueWall_link.BERNIERRegular Авторизация
+                a(href="authorization.php").blueWall_link.BERNIERRegular Авторизация
         main.wrapperAboutPage
 
             section.pageAbout__Desctop
@@ -115,17 +115,17 @@ html(lang="ru")
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score!=-show($stmt[7]['circle'])).circle_2.cricle_git
+                                circle(data-score!=-show($stmt[6]['circle'])).circle_2.cricle_git
                             .circle__text.robotoMedium GIT
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score!=-show($stmt[8]['circle'])).circle_2.cricle_gulp
+                                circle(data-score!=-show($stmt[7]['circle'])).circle_2.cricle_gulp
                             .circle__text.robotoMedium GULP
                         .wrap_circle_svg
                             svg.circle__svg
                                 circle.circle_1
-                                circle(data-score!=-show($stmt[9]['circle'])).circle_2.cricle_bower
+                                circle(data-score!=-show($stmt[8]['circle'])).circle_2.cricle_bower
                             .circle__text.robotoMedium Bower
             section.pageAbout__Desctop.pageAbout__Desctop3
                 #js_connectMap.block__map
@@ -156,7 +156,7 @@ html(lang="ru")
 
 
                 include add/footer
-        script(src="../js/mainWork.js", type="text/javascript")
+        script(src="../js/mainWork-min.js", type="text/javascript")
 
 
 

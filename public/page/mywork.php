@@ -18,7 +18,7 @@
 		<div class="wrapperBlueWall">
 			<div class="blueWall__leftSide"></div>
 			<div class="blueWall__rightSide"></div>
-			<div class="blueWall_menuLink"><a href="mywork.php" class="blueWall_link BERNIERRegular doubleDash">Мои Работы</a><a href="blog.php" class="blueWall_link BERNIERRegular">Блог</a><a href="about.php" class="blueWall_link BERNIERRegular">Обо мне</a><a href="authorithation.php" class="blueWall_link BERNIERRegular">Авторизация</a></div>
+			<div class="blueWall_menuLink"><a href="mywork.php" class="blueWall_link BERNIERRegular doubleDash">Мои Работы</a><a href="blog.php" class="blueWall_link BERNIERRegular">Блог</a><a href="about.php" class="blueWall_link BERNIERRegular">Обо мне</a><a href="authorization.php" class="blueWall_link BERNIERRegular">Авторизация</a></div>
 		</div>
 		<main class="wrapperAboutPage">
 			<section class="pageAbout__Desctop">
@@ -63,7 +63,7 @@
 					<use xlink:href="../image/sprite.svg#icon--works_header" class="svg_work"></use>
 				</svg>
 			</div>
-			<section class="pageAbout__Desctop gray_desctop adaptiveClass">
+			<section class="pageAbout__Desctop gradient_gray_lightBlue adaptiveClass">
 				<div class="blockHalfWidth__adaptive flexCenterContext">
 					<div class="wrapSlideshow flexCenterContext js_blockSlide">
 						<ul class="ul_slider"><?php foreach($stmt as $key=>$value){
@@ -95,7 +95,7 @@ echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']."
 							<div class="buttobLookSite__text robotoMedium">Посмотреть сайт</div></a>
 					</div>
 				</div>
-				<div class="blockHalfWidth__adaptive flexJustEnd padding0">
+				<div class="blockHalfWidth__adaptive flexJustEnd padding0 rightColumn">
 					<div class="arrowForSlider">
 						<div class="arrowForSlider_side flexCenterContext js_arrow__slideNext js_arrow__slide">
 							<div class="wall_for_arrowForSlider"></div>
@@ -237,7 +237,7 @@ echo "<li class=\"li__slider flexCenterContext\"><img src=".$value['photoSrc']."
 				</footer>
 				<!--script(src="https://code.jquery.com/jquery-2.2.4.js",integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=",crossorigin="anonymous")-->
 				<script src="../js/jquery.js" type="text/javascript"></script>
-				<script src="../js/main.js" type="text/javascript"></script>
+				<script src="../js/main-min.js" type="text/javascript"></script>
 				<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDPS7Xoznf9yJs6khW0ODkFuRGMKznCpI0"></script>
 			</section>
 		</main>
